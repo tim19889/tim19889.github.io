@@ -1,3 +1,9 @@
+---
+title: PAGE TITLE HERE
+layout: template
+filename: RandomPassGenerator.md
+--- 
+
 <!DOCTYPE html>
 <html lang="en">
   <body>
