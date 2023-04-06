@@ -1,193 +1,223 @@
 <!DOCTYPE html>
-<html> 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="description" content="This is an INCREDIBLE website!">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Tim's Website</title>
-		<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif; background-image: url("12.jpg"); background-attachment: fixed
+<html lang="en">
+  <body>
+    <head>
+      <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
+      <title>Random Password Generator</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+	    
+	    <script>
+	    let numInput = document.getElementById("numInput");
+let passwordOutput = document.getElementById("password");
+let copyPassword = document.getElementById("copyPassword");
+const globalCharacters = [['A','B', 'C', 'D', 'E', 'F', 'G','H', 'I','J', 'K','L', 'M', 'N', 'O','P','Q','R','S', 'T','U','V', 'W','X', 'Y','Z' ], ['a', 'b','c','d','e', 'f','g','h','i','j','k','l','m','n','o', 'p','q','r','s','t','u','v', 'w',  'x',  'y','z' ],["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], ["!", "~", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_"]];
+
+
+let createRandomPassword = (pwLength) => {
+
+  let upperCaseCheck = document.getElementById("upperCaseCheck");
+  let lowerCaseCheck = document.getElementById("lowerCaseCheck");
+  let symbolCheck = document.getElementById("symbolCheck");
+  let numberCheck = document.getElementById("numberCheck");
+  
+  const characters = [['A','B', 'C', 'D', 'E', 'F', 'G','H', 'I','J', 'K','L', 'M', 'N', 'O','P','Q','R','S', 'T','U','V', 'W','X', 'Y','Z' ], ['a', 'b','c','d','e', 'f','g','h','i','j','k','l','m','n','o', 'p','q','r','s','t','u','v', 'w',  'x',  'y','z' ],["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], ["!", "~", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_"]];
+  
+const newPasswordArr = [];
+let currentArrIndex;
+let charsInUpperArr = 0;
+let charsInLowerArr = 0;
+let charsInNumbersArr = 0;
+let charsInSymbolArr = 0;
+  
+  function createPw() {
+    
+    
+    
+  //Checks which options are selected and removes the appropriate subarrays in the characters array based on the check boxes.  
+  upperCaseCheck.checked === false ? characters[0].splice(0) : null;
+  lowerCaseCheck.checked === false ? characters[1].splice(0) : null;
+  numberCheck.checked === false ? characters[2].splice(0) : null;
+  symbolCheck.checked === false ? characters[3].splice(0) : null;
+    
+for (let i = 1; i <= pwLength; i++) {
+
+  //currentArrIndex is a random number between 0 and the length of the characters array.
+   currentArrIndex = Math.floor(Math.random() * characters.length)
+  //Selects a random character from a random array in the characters array and pushes it into the newCharacterArr array.
+  newPasswordArr.push(characters[currentArrIndex][Math.floor(Math.random() * characters[currentArrIndex].length)]);
+  //If the loop tries to push something from an empty subarray of the characters array, the code below removes that undefined item.
+  if (newPasswordArr[newPasswordArr.length-1] === undefined) {
+  newPasswordArr.pop();
+    i--;
+  }
+  //Code below keeps track of how many items from each subarray of the characters array are in the new password array.
+  characters[0].length > 0 && characters[0].includes(newPasswordArr[newPasswordArr.length-1]) ? charsInUpperArr++ : null;
+  characters[1].length > 0 && characters[1].includes(newPasswordArr[newPasswordArr.length-1]) ? charsInLowerArr++ : null;
+  characters[2].length > 0 && characters[2].includes(newPasswordArr[newPasswordArr.length-1]) ? charsInNumbersArr++ : null;
+  characters[3].length > 0 && characters[3].includes(newPasswordArr[newPasswordArr.length-1]) ? charsInSymbolArr++ : null;
+  if (i === parseInt(pwLength)) {
+    if (charsInUpperArr === 0 && characters[0].length > 0) {
+charsInUpperArr = 0;
+charsInLowerArr = 0;
+charsInNumbersArr = 0;
+charsInSymbolArr = 0; 
+newPasswordArr.splice(0);
+i = 0;
+    }
+    else if (charsInLowerArr === 0 && characters[1].length > 0) {
+charsInUpperArr = 0;
+charsInLowerArr = 0;
+charsInNumbersArr = 0;
+charsInSymbolArr = 0; 
+newPasswordArr.splice(0);
+i = 0;
+    }
+    else if (charsInNumbersArr === 0 && characters[2].length > 0) {
+charsInUpperArr = 0;
+charsInLowerArr = 0;
+charsInNumbersArr = 0;
+charsInSymbolArr = 0; 
+newPasswordArr.splice(0);
+i = 0;
+    }
+   else if (charsInSymbolArr === 0 && characters[3].length > 0) {
+charsInUpperArr = 0;
+charsInLowerArr = 0;
+charsInNumbersArr = 0;
+charsInSymbolArr = 0; 
+newPasswordArr.splice(0);
+i = 0;
+    }
+  }
+}
+}
+  createPw();
+  if (pwLength < 6) {
+    copyPassword.style.visibility = "hidden";
+    passwordDiv.style.visibility = "visible";
+    passwordOutput.innerHTML = "Password it too short. Must be minimum of 6 characters.";
+  }
+   else if (pwLength > 100) {
+     copyPassword.style.visibility = "hidden";
+     passwordDiv.style.visibility = "visible";
+    passwordOutput.innerHTML = "Password is too long. Must be no more than 100 characters."; 
+  }
+else {
+  copyPassword.style.visibility = "visible";
+  passwordDiv.style.visibility = "visible";
+  passwordOutput.innerHTML = newPasswordArr.join("");
+  charsInUpperArr = 0;
+  charsInLowerArr = 0;
+  charsInNumbersArr = 0;
+  charsInSymbolArr = 0; 
+  newPasswordArr.splice(0);
+  characters.splice(0);
+  characters.push(...globalCharacters);
+}
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+const copyPass = () => {
+navigator.clipboard.writeText(passwordOutput.innerHTML);
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04AA6D;
+	    </script>
+	    
+	    <style> 
+		    .text {
   color: white;
+  display: inline-block;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
-</style>
-	</head>
-	<body>
-		<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#contact">Contact</a>
-  <a href="https://tim19889.github.io/aboutus">About</a>
-</div>
-
-<div style="padding-left:16px">
-  <h2>Top Navigation Example</h2>
-  <p>Some content..</p>
-</div>
-	  	<h1> Tim's Website</h1>
-		<header>
-			<nav> 
-			</nav>
-		</header>
-		<main>
-			<article> Article content blah blah blah 
-				<section> Section content blah blah blah. Go check your email bro, <a href="https://gmail.com"><h2>right here</h2></a>
-		<br>
-		</br> 
-				Or here if you want to open in a new tab...yeah right <a href="https://gmail.com" target="_blank"><h3>here</h3></a>
-		<br>
-		</br>		<a href="https://upload.wikimedia.org/wikipedia/commons/b/b8/Patterson_Park_Observatory_Bmore.JPG">
-				<img width="300" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Patterson_Park_Observatory_Bmore.JPG">
-				</a>
-				
-		<br>
-		</br>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-					<ul><li>Apples</li><li>Oranges</li><li>Bananas</li></ul>
-					<ol><li>French Fries</li><li>Chickens</li><li>Billy Goats</li></ol>
-					<dl><dt>Apples</dt><dd>- They are red…and delicious</dd></dl> 
-
-				</section>
-				
-			</article>  
-
-			<article>	
-				<table>
-					<thead>
-						<caption><h2>User Information</h2></caption>
- 						<tr> 
-							<th>FirstName</th>
-							<th>LastName</th>
-							<th>Phone</th>
-							<th>StreetAddress</th>
-							<th>City</th>
-							<th>State</th>
-							<th>ZipCode</th>
-						</tr> 
-					</thead> 
-					<tbody>
-						<tr>
-							<td colspan="5">John</td>
-							<td>Smith</td>
-							<td>717-314-2932</td>
-							<td>24 Bluebelt Lane</td>
-							<td>San Diego</td>
-							<td>California</td>
-							<td>22400</td>
-						</tr> 
-						<tr>
-							<td>Susan</td>
-							<td>Kreamer</td>
-							<td>717-321-4321</td>
-							<td>19 Fairview Street</td>
-							<td>Muhlenberg</td>
-							<td>PA</td>
-							<td>19605</td>
-						</tr>
-					</tbody>
-						
-				</table>
-			<br>
-			</br>
-				<a href="#">link</a> <a href="#">link24</a> 
-				<p>Paragraph 1</p> <p>Paragraph 2</p>
-			<br>
-			</br>
-				<hr2>Span Elements</hr2>
-			<br>
-			</br>
-				<span>span1</span>
-				<span>span2</span>
-			<br>
-			</br>
-				<hr2>Div Elements</hr2>
-				<div>div1</div>
-				<div>div2</div>
-			<br>
-			</br>
-				<hr2>Username</hr2>
-			<br>
-			</br>
-				<input type="text" value="Enter Your Username"/>
-			<br>
-			</br>
-				<hr2>Password</hr2>
-			<br>
-			</br>
-				<input type="password" />
-			<br>
-			</br>
-				<textarea rows="20" cols="40">
-				Type in some text here. 
-				</textarea> 
-			<br>
-			</br>
-				<input type="date" />
-			<br>
-			</br>
-				<input type="email" />
-			<br>
-			</br>
-				<input type="range" />
-			<br>
-			</br>
-				<input type="file" />
-			<br>
-			</br>
-				<input type="checkbox" />
-				<input type="checkbox" />
-			<br>
-			</br>
-				<input name="btn" type="radio" />
-				<input name="btn" type="radio" />
-			<br>
-			</br>
-				<form>
-				<input type="submit" />
-				</form>
-				<iframe src="https://nfl.com" frameborder="0" width="1000" height="800">ThisTextIsDisplayedIfiFrameFailsToDisplay</iframe>
-			</article>
-
-
-		</main> 
-
-		<footer>
-
-		</footer> 
-		
-		<br/>
-		<hr/>
-		<p><big>Check</big> out my marvelous paragraph. Isn't it a thing of beauty? I guess I should add a little more text to it. Is this long enough? Hopefully.</p>
-		<p>This is another <b><i>AWESOME</i></b> paragraph.</p>
-		<p>Let's make a subscript...H<sub>2</sub>0</p>
-		<p>Let's make a superscript...10<sup>2</sup>0</p>
-		<!--This is a test comment 
-		This is another one --> 
-		<br/>
-		<p style="color:orange; background-color:blue;"> I like the color orange.</p>
-	</body>
+#pwGeneratorContainer {
+  border-radius: 3%;
+  width: 40em;
+  min-height: 25em;
+  height: auto;
+  background-color: gray;
+  margin: auto;
+  text-align: center; 
+}
+#title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#numInputTag {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#passwordDiv {
+  display: inline-block;
+  border: 5px solid blue;
+  background-color: white;
+  min-width: 10em;
+  max-width: 98.3%;
+  height: auto;
+  margin: auto;
+  visibility: hidden;
+  cursor: pointer;
+}
+#password {
+  margin: 0;
+  padding: 0;
+  font-size: 12vh;
+  overflow-wrap: break-word;
+}
+#copyPassword {
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+  cursor: pointer;
+}
+#instructions {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#unorderedList {
+  text-align: left;
+}
+#numInput {
+  width: 3em;
+  height: 2em;
+  display: block;
+  margin: auto;
+}
+.checks {
+  display: inline-block;
+  margin: auto;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: 1em;
+}
+		    
+	    </style>
+	    
+	    
+    </head>
+<div id="pwGeneratorContainer">
+  <h1 id="title" class="text">Random Password Generator</h1>
+  <p id="instructions" class="text">Select below how many characters long you want your password to be. By default it will include at least one the following:</p>
+  <ul id="unorderedList" class="text">
+    <li>1 Uppercase Letter</li>
+    <li>1 Lowercase Letter</li>
+    <li>1 Number</li>
+    <li>1 Special Character</li>
+  </ul><br>
+  <div id="passwordDiv">
+    <h2 id="password"></h2>
+  </div>
+  <button id="copyPassword" onclick="copyPass()">Copy</button>
+  <h2 class="text" id="numInputTag">Password Length</h2>
+  <input type="number" id="numInput" onChange="createRandomPassword(numInput.value)" value ="10"></input>
+    <h3 class="text">Uppercase</h3><input type="checkbox" id="upperCaseCheck" class="checks" checked></input>
+  <h3 class="text">Lowercase</h3><input type="checkbox" class="checks" id="lowerCaseCheck" checked></input>
+<h3 class="text">Symbols</h3><input type="checkbox" class="checks" id="symbolCheck" checked></input>
+<h3 class="text">Numbers</h3><input type="checkbox" class="checks" id="numberCheck" checked></input>
+    </div>
+  </body>
 </html>
