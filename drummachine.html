@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+<link
+    rel="stylesheet" href="drummachine.css"
+  />
+      <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <title>Drum Machine</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    </head>
+<div id="drum-machine">
+  <div id="container">
+    <div id="drum-pad-area">
+      <div id="top-btns" class="btn-rows">
+        <button id="heater1" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" class="clip" id="Q">
+          </audio><h2 class="letters">Q</h2></button>
+        <button id="heater2" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" class="clip" id="W">
+          </audio><h2 class="letters">W</h2></button>
+        <button id="heater3" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" class="clip" id="E">
+          </audio><h2 class="letters">E</h2></button>
+      </div>
+      <div id="middle-btns" class="btn-rows">
+        <button id="heater4" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" class="clip" id="A"></audio><h2 class="letters">A</h2></button>
+        <button id="clap" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" class="clip" id="S">
+          </audio>
+          <h2 class="letters">S</h2>
+        </button>
+        <button id="openhh" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" class="clip" id="D">
+          </audio><h2 class="letters">D</h2></button>
+      </div>
+      <div id="bottom-btns" class="btn-rows">
+        <button id="kicknhat" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" class="clip" id="Z">
+          </audio><h2 class="letters">Z</h2></d>
+        <button id="kick" class="drum-pad" onclick="playClip(this.id)">
+          <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" class="clip" id="X">
+          </audio><h2 class="letters">X</h2></button>
+        <button id="closedhh" class="drum-pad" onclick="playClip(this.id)"><audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" class="clip" id="C">
+          </audio><h2 class="letters">C</h2></button>
+      </div>
+    </div>
+    <div id="options">
+      <h2 id="power">POWER</h2>
+      <div id="onoff-container">
+        <div id="onoffbutton" onclick="togglePower()"></div>
+      </div>
+      <h1 id="display">
+      </h1>
+      <input type="range" id="volume-slider"></input>
+    </div>
+    
+  </div>
+</div>
+    
+    
+  </body>
+</html>

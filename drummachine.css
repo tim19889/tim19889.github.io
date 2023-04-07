@@ -1,0 +1,153 @@
+body {
+  background-color: lightgreen;
+  text-align: center;
+  margin: auto;
+  justify-content: center; 
+  margin: auto;
+}
+
+#drum-machine {
+  width: 45%;
+  height: 325px; 
+  background-color: gray;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em; 
+  border: 5px solid blue;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+#drum-pad-area {
+width: 50%;
+  background-color: lightgray;
+  
+}
+.btn-rows {
+  height: 33.3%;
+  width: 100%;
+}
+.drum-pad {
+  margin: auto;
+  width: 25%;
+  height: 80%;
+  background-color: gray;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px black;
+  
+}
+.drum-pad:active {
+  background-color: yellow;
+  box-shadow: 0 0 0 black;
+  height: 77%;
+}
+#top-btns {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+#middle-btns {
+display: flex;
+  flex-wrap: wrap;
+  
+}
+#bottom-btns {
+ display: flex;
+  flex-wrap: wrap;
+ 
+}
+.letters {
+margin: auto;
+margin-top: 10%;
+}
+#options {
+  background-color: red;
+  width: 50%;
+}
+#display {
+  width: 80%;
+  height: 1.5em;
+  background-color: white;
+  margin: auto;
+  margin-top: 10%;
+  padding: 10px 2px 0px 2px;
+  border-radius: 10px;
+
+}
+#onoff-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 4em;
+  height: 2em;
+  margin: auto;
+  
+}
+#onoffbutton {
+  background-color: white;
+  width: 40%;
+  height: 80%;
+  margin: 5% 5% 0% 5%;
+  border-radius: 10%;
+}
+#power {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+#volume-slider {
+  margin-top: 4em;
+  margin-bottom: 2em;
+  accent-color: yellow;
+}
+
+@media (max-width: 800px) {
+  #drum-machine {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 70%;
+    display: block;
+    width: 98%;
+    
+}
+  #container {
+  display: flex;
+    flex-direction: column-reverse;
+  height: 100%;
+    width: 100%;
+    
+    
+  }
+  #drum-pad-area {
+  display: block;
+  width: 100%;
+  background-color: lightgray;
+    
+  
+}
+  #options {
+    display: block;
+    width: 100%;
+  }
+  .drum-pad {
+  margin: auto;
+  width: 25%;
+  height: 100%;
+  margin-top: 5%;
+    margin-bottom: 2%;
+    padding: 2em;
+  background-color: gray;
+  border-radius: 10%;
+  box-shadow: 5px 5px 10px black;
+}
+  #volume-slider {
+  width: 50%;
+    margin-bottom: 4em;
+}
+  
+}
