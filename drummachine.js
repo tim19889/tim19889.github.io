@@ -82,7 +82,7 @@ setTimeout(pulseFunc, 500);
 let powerFlag = 1;
 const togglePower = () => {
   if (powerFlag === 1) {
-    document.getElementById("onoff-container").style.['justify-content'] = "right";
+    document.getElementById("onoff-container").style.justifyContent = "right";
     document.getElementById("display").innerHTML = "";
   $(".drum-pad").attr("disabled", true);
     
@@ -90,7 +90,7 @@ const togglePower = () => {
   }
   
   else if (powerFlag === 2) {
-    document.getElementById("onoff-container").style.['justify-content'] = "left";
+    document.getElementById("onoff-container").style.justifyContent = "left";
     $(".drum-pad").attr("disabled", false);
     
     powerFlag = 1;
