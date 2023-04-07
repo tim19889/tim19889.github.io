@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Random Quote Machine" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      const backgroundColors = ["red", "green", "blue", "white", "yellow", "gray"];
+      const quotesArr = [
+"Faithless is he that says farewell when the road darkens.",     
+"Go back?” he thought. “No good at all! Go sideways? Impossible! Go forward? Only thing to do! On we go!” So up he got, and trotted along with his little sword held in front of him and one hand feeling the wall, and his heart all of a patter and a pitter.",    
+"I believe in Christianity as I believe that the sun has risen: not only because I see it, but because by it I see everything else.",     
+"It is a good rule after reading a new book, never to allow yourself another new one till you have read an old one in between.",     
+"To be trusted is a greater compliment than being loved.",    
+"Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude in any given set of circumstances, to choose one's own way.", "It is the mark of an educated mind to be able to entertain a thought without accepting it.", "If you're going through hell, keep going.", "I may be drunk, Miss, but in the morning I will be sober and you will still be ugly.", "Nearly all men can stand adversity, but if you want to test a man's character, give him power.", "Tact: the ability to describe others as they see themselves.", "Happiness and moral duty are inseparably connected.", "We will be more successful in all our endeavors if we can let go of the habit of running all the time, and take little pauses to relax and re-center ourselves. And we'll also have a lot more joy in living.", "You must love in such a way that the person you love feels free."];
+      const authors = [
+        "J.R.R. Tolkien",
+        "J.R.R. Tolkien",
+        "C.S. Lewis",
+        "C.S. Lewis",
+        "George MacDonald",
+        "Viktor Frankl",
+        "Aristotle", 
+        "Winston Churchill", 
+        "Winston Churchill",
+        "Abraham Lincoln",
+        "Abraham Lincoln",
+        "George Washington",
+        "Thich Nhat Hanh",
+        "Thich Nhat Hanh"
+      ]
+      let previousQuote;
+      let previousColor;
+      
+      function fetchQuote() {
+        let x = Math.floor(Math.random() * (quotesArr.length - 1) + 1);
+        let randomColor = Math.floor(Math.random() * (backgroundColors.length - 0) + 0);
+        if (x===previousQuote) {x-=1};
+        if (randomColor === previousColor) {randomColor+=1};
+        previousColor = randomColor;
+        previousQuote = x;
+        let randomQuote = quotesArr[x];
+        let author = authors[quotesArr.indexOf(randomQuote)];
+        return document.getElementById("text").innerHTML = randomQuote, document.getElementById("author").innerHTML = author, document.body.style.background = backgroundColors[randomColor];}
+
+const addQuote = () => {
+let authorInput = document.getElementById("authorInput");
+let quoteInput = document.getElementById("quoteInput");
+if (quotesArr.includes(quoteInput.value) === false && authorInput.value.length > 6 && quoteInput.value.length > 6) {
+authors.push(authorInput.value);
+quotesArr.push(quoteInput.value);
+  authorInput.value = "";
+  quoteInput.value = "Thank you. Your quote has been added.";
+}
+console.log(authors, quotesArr);
+}      
+      
+  </script>
+  </head>
+  <body onload="fetchQuote()">
+    <main>
+      <div id="quote-box">
+        <h1>Random Quote Machine</h1>
+        <h2>Click the button below for a new quote.</h2>
+      <button id="new-quote" onclick="fetchQuote()">New Quote</button>
+      <p id="text"></p>
+        <h2 id="author"></h2>
+        <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank"><img id="twitter-img" src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png"></img></a>
+        </div>
+    <div id="addQuoteBox">
+      <h2>Add Quote</h2>
+      <p>Types in the author's name and quote below then click "Add Quote" to add a new quote to the machine.</p>
+      <h3>Author</h3><input type="text" id="authorInput" placeholder="Must be at least 7 characters long."></input>
+    <h3>Quote</h3>
+    <textarea id="quoteInput" placeholder="Must be at least 7 characters long."></textarea>
+  <button id="addQuote" onclick="addQuote()"><h3>Add Quote</h3></button>
+    </div>
+    </main>
+    
+  </body>
+</html>
