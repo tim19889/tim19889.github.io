@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+<link
+    rel="stylesheet" href="sessionclock.css"
+  />
+      <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+      <title>25 + 5 Clock</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+        
+        
+    </script>
+    </head>
+<div>
+      <audio src="https://www.pacdv.com/sounds/interface_sound_effects/sound107.wav" id="beep">
+       </audio>
+      <div id="clock-container">
+        
+        <div id="break-decrement" class="button" onclick="timerAdjust(this.id)">▼</div>
+      <div id="break-increment" class="button" onclick="timerAdjust(this.id)">▲</div>
+      <div id="start_stop" class="bigbutton" onclick="start()">|<br/>O</div>
+        <div id="reset" class="bigbutton" onclick="reset()"><p id="reset-text">Reset</p></b></div>
+      <div id="session-decrement" class="button" onclick="timerAdjust(this.id)">▼</div>
+      <div id="session-increment" class="button" onclick="timerAdjust(this.id)">▲</div>
+    <div id="clock">
+      <div id="break-label">Break Length
+        <div id="break-length">5</div> 
+      </div>
+      
+      <div id="session-label">Session Length
+        <div id="session-length">25</div>
+      </div>
+      <div id="timer-label">Session</div>
+      <div id="session-container">
+        <div id="time-left">25:00</div>
+      </div>
+    </div>
+        <img src="https://yourpowerpro.com/wp-content/uploads/2020/12/workplace-electrical-safety-800x707.jpg" alt="Burning Outlet" id="burning"/>
+      </div>
+  </div>
+    <script src="sessionclock.js"></script>
+  </body>
+</html>

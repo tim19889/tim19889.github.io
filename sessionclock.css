@@ -1,0 +1,197 @@
+body {
+  text-align: center;
+  margin: auto;
+  background-color: #4caecc;
+}
+#burning {
+  position: absolute;
+  width: 90%; 
+  top: -80%;
+  right: -50%;
+  z-index: -2;
+}
+#clock-container {
+  position: relative;
+  width: fit-content;
+  margin: auto;
+  margin-top: 10%;
+  flex-direction: row;
+  justify-content: center;
+}
+#clock {
+  width: 600px; 
+  height: 200px;
+  background-color: black;
+  border: 7px solid gray;
+  border-radius: 20%;
+  margin: auto;
+  margin-top: -4px;
+  
+}
+#break-label {
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 2%;
+  margin-left: 10%;
+  float: left;
+}
+#session-label {
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 2%;
+  float: right;
+  margin-right: 10%;
+}
+.button {
+  width: 30px;
+  height: 22px;
+  background-color: gray;
+  margin: auto;
+  margin-right: 2%;
+  margin-left: 2%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 12px; 
+}
+.button:hover {
+  color: blue;
+}
+.button:active {
+  top: 2px;
+}
+
+.bigbutton {
+  background-color: black;
+  width: 50px;
+  height: 38px;
+  margin: auto;
+  margin-right: 2%;
+  margin-left: 2%;
+  display: inline-block;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+#break-decrement {
+  position: relative;
+  right: 8%;
+}
+#break-increment {
+  position: relative;
+  right: 10%;
+}
+#session-decrement {
+  position: relative;
+  left: 8%;
+}
+#session-increment {
+  position: relative;
+  left: 6%;
+}
+#session-container {
+  width: 280px;
+  height: 100px;
+  background-color: black;
+  border: 7px solid;
+  border-color: #0b00e0;
+  border-radius: 5%;
+  margin: auto;
+  margin-top: 10px;
+}
+#timer-label {
+  color: white;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#time-left {
+  color: red;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: Orbitron, sans-serif;
+  margin: auto;
+  margin-top: 5px;
+}
+#start_stop {
+  position: relative;
+  top: -2px;
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  border: none;
+}
+
+#start_stop:active {
+ height: 34px;
+  top: 2px;
+}
+#reset {
+  position: relative;
+  top: -1 px;
+  background-color: red;
+  color: white;
+  
+}
+#reset:active {
+height: 35px;
+top: 2px;
+}
+
+#reset-text {
+  position: relative;
+  top: -7px;
+}
+
+@media (max-width: 700px) {
+  #clock {
+    width: 380px;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  #break-decrement {
+  position: relative;
+  right: -2%;
+}
+#break-increment {
+  position: relative;
+  right: 0%;
+}
+#session-decrement {
+  position: relative;
+  left: 0%;
+}
+#session-increment {
+  position: relative;
+  left: -2%;
+}
+}
+
+@media (max-width: 800px) {
+  #burning {
+    transform: rotate(90deg);
+  position: absolute;
+  width: 90%; 
+  top: 40%;
+  right: -10%;
+  z-index: -2;
+}
+  #time-left {
+    font-size: 55px;
+    margin-top: -0px;
+  }
+  #session-container {
+    width: 240px;
+    height: 70px;
+    margin-bottom: 15px;
+  }
+}
