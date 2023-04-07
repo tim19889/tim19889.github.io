@@ -5,7 +5,12 @@ body {
   justify-content: center; 
   margin: auto;
 }
-
+#flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 #drum-machine {
   width: 45%;
   height: 325px; 
