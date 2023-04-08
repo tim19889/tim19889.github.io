@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <head>
+<link rel="stylesheet" href="rnumeralconverter.css" />
+      <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+      <title>Roman Numeral Converter</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
+    </script>
+    </head>
+    
+    <div id="mainDiv" class="container-fluid">
+      <div id="converterContainer" class="container-fluid">
+      <div id="top">
+        <h3 id="title">
+          Integer to Roman Numeral
+        </h3>
+        <p id="instructions">Enter number below and click Convert.</p>
+        <input type="number" id="inputField" value=1></input>
+        </div>
+        
+        <div id="bottom">
+          <p id="descriptionText">placeholder</p>
+          <h1 id="result">placeholder</h1>
+          <button id="convertBtn" class="btn-default btn" onclick="convertToRoman()"><span id="result-text">Convert</span></button>
+          <button class="btn btn-default" id="toggleButton" onclick="toggle()">Convert Integer to Roman Numeral</button>
+          
+        </div>
+      </div>
+    </div>
+    
+    <script src="rnumeralconverter.js"></script>
+  </body>
+</html>
