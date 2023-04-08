@@ -1,0 +1,319 @@
+
+#registerContainer {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  width: 70%;
+}
+#display {
+  position: absolute;
+  display: block;
+  top: 11.4%;
+  left: 33.5%;
+  width: 35%;
+  height: auto;
+  background-color: black;
+  border-radius: 3%;
+}
+#displayLeft {
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  background-color: black;
+  float: left;
+  text-align: left;
+  border-radius: 3%;
+}
+#displayRight {
+  display: inline-block;
+  width: 49%;
+  height: auto;
+  background-color: black;
+  float: right;
+  text-align: left;
+  border-radius: 3%;
+}
+.displayText {
+  font-size: 1vw;
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  color: green;
+  font-family: Orbitron, sans-serif;
+}
+.displayTextBottom {
+  font-size: 0.95vw;
+  margin-left: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: green;
+  font-family: Orbitron, sans-serif;
+}
+.displayFillerText {
+  font-size: 0.95vw;
+  margin-left: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  font-family: Orbitron, sans-serif;
+}
+#registerStatus {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 24.5%;
+  left: 30.9%;
+  width: 42.3%;
+  height: auto;
+  background-color: black;
+  border-radius: 2%;
+  text-align: left;
+}
+#registerStatusLeft {
+  flex-grow: 1;
+  width: 31%;
+  height: 100%;
+}
+#registerStatusMiddle {
+ flex-grow: 1;
+  width: 31%;
+  height: 100%; 
+}
+#registerStatusRight {
+ flex-grow: 1;
+  width: 37%;
+  height: 100%; 
+}
+#registerTop {
+  position: absolute;
+  top: -1.8%;
+  left: 34.5%;
+  width: 33%;
+  height: auto;
+  
+}
+#registerBottom {
+  
+  display: block;
+  height: auto;
+  width: 100%;
+  
+}
+#inputs {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  display: inline-block;
+  width: 15em;
+  height: auto;
+  background-color: #964b00;
+  border: 7px solid #d2b48c;
+  border-radius: 5%;
+}
+#error {
+  word-wrap: break-word;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: blue;
+}
+.denominationInputs {
+ 
+  margin: 0.5em;
+  width: 4em;
+}
+.denominationNames {
+  display: inline-block;
+  margin: 0.5em;
+  width: 4em;
+  margin-bottom: 2px;
+}
+.inputLabelNames {
+  margin-bottom: 2px;
+}
+#formSubmit {
+  margin-top: 1em;
+  width: 8em;
+  height: 1.5em;
+}
+#resetButton {
+display: inline-block;
+margin-top: 1em;
+margin-right: 0.5em;
+width: 6.5em;
+height: 5em;
+background-color: red;
+border-radius: 12%;
+}
+#resetButton:hover {
+  border: 2px solid white;
+}
+
+#checkoutButton {
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  margin-bottom: 1em;
+  width: 6.5em;
+height: 5em;
+  background-color: green;
+  border-radius: 12%;
+}
+#checkoutButton:hover {
+  border: 2px solid white;
+}
+
+@media (max-width: 800px) {
+  body {
+    background-color: black;
+  }
+}
+
+  
+  @media (max-width: 800px) {
+  #mainContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+}
+@media (max-width: 800px) {
+  #registerContainer {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+}
+
+@media (max-width: 800px) {
+  #registerTop {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #registerBottom {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  #display {
+    position: absolute;
+    display: block;
+    height: 7em;
+    width: 99%;
+    background-color: black;
+    left: 0;
+    border-radius: 0;
+    
+  }
+}
+@media (max-width: 800px) {
+  #displayLeft {
+    
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  #displayRight {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    
+  }
+}
+@media (max-width: 800px) {
+  #registerStatus {
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 5em;
+    width: 99%;
+    background-color: black;
+    left: 0;
+  }
+}
+@media (max-width: 800px) {
+  #registerStatusLeft {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: auto;
+    margin-top: 8.4em;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    height: 6em;
+    width: 100%;
+    background-color: black;
+  }
+}
+@media (max-width: 800px) {
+  #registerStatusMiddle {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    height: 4em;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 1em;
+  }
+}
+@media (max-width: 800px) {
+  #registerStatusRight {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    height: 4em;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 1em;
+  }
+}
+@media (max-width: 800px) {
+  #inputs {
+    position: relative;
+    text-align: center;
+  display: block;
+  width: 15em;
+  height: 34em;
+  background-color: #964b00;
+  border: 7px solid #d2b48c;
+  border-radius: 5%;
+    margin: auto;
+    top: 2em;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .displayText {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  .displayTextBottom {
+    font-size: 16px;
+  }
+}
+@media (max-width: 800px) {
+  #status_text {
+    padding-bottom: 1em;
+    text-decoration: underline;
+  }
+}
+
+
+
