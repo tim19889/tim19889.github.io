@@ -1,0 +1,151 @@
+body {
+  background-color: white;
+}
+#calculator {
+  margin: auto;
+  margin-top: 5%;
+  width: 300px;
+  height: 420px;
+  background-color: #c5e010;
+  border-radius: 10%;
+  padding: 20px;
+  
+}
+.smallbtn {
+  width: 36px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: inline-block;
+  text-align: center;
+  
+}
+.numbtntxt {
+ margin-top: 30%;
+}
+.funcbtn {
+  width: 36px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin: 30px 25px 10px 10px;
+  display: inline-block;
+  text-align: center;
+}
+#clear {
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  color: black;
+  background-color: gray;
+  border-radius: 20%;
+  border: 2px solid black;
+  display: inline-block;
+  font-weight: bold;
+}
+#equals {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 20%;
+  border: 2px solid blue;
+  background-color: blue;
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 0%;
+  margin-top: 10%;
+}
+.funcbtntxt {
+  margin: auto;
+  margin-top: 8%;
+}
+#display-container {
+  width: 180px;
+  height: 40px;
+  border-radius: 5%;
+  margin-left: 8%;
+  text-align: center;
+  display: inline-block;
+  background-color: white;
+}
+#display {
+  font-weight: bold;
+  margin: 0;
+  overflow: hidden;
+  float: right;
+}
+#display-top {
+  margin: 0;
+  overflow: hidden;
+  float: right;
+}
+.smallbtn:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+  
+}
+.funcbtn:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+}
+#equals:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+}
+#clear:hover {
+  cursor: pointer;
+  border: 2px solid white;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  #calculator {
+    width: 90%;
+    height: 90%;
+  }
+  .smallbtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+  text-align: center;
+    overflow: wrap;
+  
+}
+
+.funcbtn {
+  width: 40px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+  margin: 30px 25px 20px 15px;
+  display: inline-block;
+  text-align: center;
+  overflow: wrap;
+}
+  #equals {
+    height: 50px;
+    width: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+  }
+}
