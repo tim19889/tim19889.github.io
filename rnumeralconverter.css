@@ -1,0 +1,84 @@
+
+
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: orange;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  
+}
+#converterContainer {
+  background-color: blue;
+  width: 31em;
+  height: 33em;
+  border-radius: 5%;
+  margin: auto;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+#top {
+  display: block;
+  width: 90%;
+  height: 10em;
+  background-color: blue;
+  margin: auto;
+  margin-bottom: 0;
+  
+}
+#bottom {
+  display: block;
+  width: 90%em;
+  height: 10em;
+  background-color: blue;
+  margin: auto;
+  margin-top: 0;
+}
+#title {
+  color: white;
+}
+p {
+  color: white;
+}
+#numeralInput {
+  margin-bottom: 0;
+}
+#result {
+  
+  color: blue;
+  margin-top: 0;
+  margin-bottom: 1em;
+  
+}
+#convertBtn {
+  position: relative;
+  width: 10em;
+  height: 5em;
+}
+#convertBtn:hover {
+  background-color: lightgray;
+}
+#result-text {
+  font-weight: bold;
+  font-size: 20px;
+}
+#descriptionText {
+  color: blue;
+}
+#toggleButton {
+  display: block;
+  margin: auto;
+  margin-top: 5.5em;
+}
+@media (max-width: 800px) {
+  #converterContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  #mainDiv {
+    background-color: blue;
+  }
+}
