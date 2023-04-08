@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Caesar's Cipher" />
+    <title>Caesar's Cipher</title>
+    <link rel="stylesheet" href="caesarscipher.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="cipherBox">
+        <h1>Caesar's Cipher</h1>
+        <p>One of the simplest and most widely known ciphers is a Caesar cipher, also known as a shift cipher. In a shift cipher the meanings of the letters are shifted by some set amount.</p>
+
+<p>A common modern use is the ROT13 cipher, where the values of the letters are shifted by 13 places. Thus A ↔ N, B ↔ O and so on.</p>
+        <p>Enter your message below and click "Decrypt / Encrypt" to convert it into a cipher. You can enter encrypted text and have it decrypted, or enter decrypted text to have it encrypted.</p>
+        <textarea id="textInput"></textarea>
+      
+        <button id="decryptEncrypt" class="myBtn" onclick="rot13Decrypt(input.value.toUpperCase())">Decrypt / Encrypt</button>
+        <h2 id="h2Result"></h2>
+        <p id="pResult"></p>
+      </div>
+    </div>
+    
+    <script src="caesarscipher.js"></script>
+  </body>
+  
+  
+</html>
