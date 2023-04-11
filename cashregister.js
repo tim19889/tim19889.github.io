@@ -1,7 +1,3 @@
-import React, { useState } from "https://cdn.skypack.dev/react";
-import ReactDOM from "https://cdn.skypack.dev/react-dom";
-import useStateInCustomProperties from "https://cdn.skypack.dev/use-state-in-custom-properties";
-
 
 const cid = [["PENNY:", 5], ["NICKEL:", 6], ["DIME:", 10], ["QUARTER:", 15], ["ONE:", 30], ["FIVE:", 50], ["TEN:", 80], ["TWENTY:", 120], ["HUNDRED:", 500]];
 
