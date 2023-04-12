@@ -8,7 +8,6 @@
       <title>Tim's Portfolio</title>
 	    
 	    <style> 
-		    
 
 
 #contentContainer {
@@ -38,27 +37,39 @@
   
   margin-right: 20%;
 }
-
-#profilePic{
-  width: 70%;
+#profilePicDiv{
+  position: relative;
+  margin-top: 10px;
+  margin: auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profilePic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -0%) translateX(107px);
 }
 		    #content {
           
 			    height: 100vh;
-          width: 80em;
-          min-width: 85%;
+          			width: 80em;
+          			min-width: 85%;
 			    background-color: white;
 		    }
-
 	    </style>
 	    </head>
 	
 	
   <body>
 	  
-	 <div id="contentContainer">
+	<div id="contentContainer">
 		  <div id="navigation">
-        <img id="profilePic" src="https://github.com/tim19889/images/blob/main/2.jpg?raw=true"></img>
+        <br>
+        <div id="profilePicDiv"><img id="profilePic" src="https://github.com/tim19889/images/blob/main/2.jpg?raw=true"></img></div>
       <h3 id="myName">Tim Porsche</h3>
       <p><i>Web Developer</i></p>
       
