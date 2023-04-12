@@ -8,13 +8,12 @@
       <title>Tim's Portfolio</title>
 	    
 	    <style> 
-
-
-
+body {
+  margin: 0;
+}
 
 #contentContainer {
   display: flex;
-  border: 5px solid red;
   flex-direction: row;
   min-width: 80%;
   width: 80em;
@@ -25,11 +24,14 @@
   overflow: hidden;
 } 
 		    #navigation {
+  border-width: 0 1px 1px 1px;
+border-style: solid;
+border-color: black;
   height: 100%;
   width: 22em;
   min-width: 20%;
   position: fixed;
-  background-color: lightgray;
+  background-color: #F2F3F7;
   text-align: center;
 }
 
@@ -64,6 +66,7 @@
   min-width: 80%;
   background-color: blue;
   margin-left: 22em;
+  text-align: center;
 }
 
 #welcome1 {
@@ -78,15 +81,28 @@
   background-color: red;
   display: none;
 }
-
-
 	    </style>
 	    </head>
 	
 	
   <body>
 	  
-	<div id="contentContainer">
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+      <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
+      <title>Tim's Portfolio</title>
+	    
+	    </head>
+	
+	
+	
+  <body>
+	  
+	  <div id="contentContainer">
       
 		  <div id="navigation">
         <br>
@@ -116,6 +132,7 @@
 		  </div>
     
 	  </div>
-	  
+	</body>
+</html>
 	</body>
 </html>
