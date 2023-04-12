@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <head>
+	<head>
       <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
       <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
       <title>Tim's Portfolio</title>
 	    
-	    
 	    <style> 
-		   body {
-			   background-color: orange;
-			   text-align: center;
+		    #contentContainer {
+		    display: flex; 
+			width: 100%;
+			height: 100%;
+			    justify-content: center;
+			    background-color: white;
+		    } 
+		    #navigation {
+		    	height: 100%;
+			    width: 20%;
+			    position: fixed;
+			    background-color: gray;
 		    }
-		    .blockLinks {
-		    display: block;
+		    #content {
+			    min-height: 100%;
+			    height: auto;
+			    width: 80%;
+			    background-color: blue;
 		    }
-		    
+		  
 	    </style>
 	    </head>
-	  <h1>Tim's Portfolio</h1>
-	  <ul>
-		  
-		  <a href="PasswordGeneratorHtml.html" target="_blank" class="blockLinks">Random Password Generator</a>
-		  <a href="caesarscipher.html" target="_blank" class="blockLinks">Caesar's Cipher</a>
-		  <a href="palindromechecker.html" target="_blank" class="blockLinks">Palindrome Checker</a>
-		  <a href="quotemachine.html" target="_blank" class="blockLinks">Random Quote Machine</a>
-		  <a href="sessionclock.html" target="_blank" class="blockLinks">25 + 5 Session Clock</a>
-		  <a href="usphonevalidator.html" target="_blank" class="blockLinks">US Phone Number Validator</a>
-	  </ul>
+	
+	
+	
+  <body>
+	  
+	  <div id="contentContainer">
+		  <div id="navigation"></div>
+		  <div id="content"></div>
+	  
+	  </div>
+	  
+	  
 	</body>
 </html>
