@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+}
+
+#contentContainer {
+  display: flex;
+  flex-direction: row;
+  min-width: 80%;
+  width: 80em;
+  min-height: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+  background-color: white;
+  overflow: hidden;
+} 
+		    #navigation {
+  border-width: 0 1px 1px 1px;
+border-style: solid;
+border-color: black;
+  height: 100%;
+  width: 22em;
+  min-width: 20%;
+  position: fixed;
+  background-color: #F2F3F7;
+  text-align: center;
+}
+
+#navLinks li {
+  list-style-type: none;
+  margin-top: 10px;
+  
+  margin-right: 20%;
+}
+
+#profilePicDiv{
+  position: relative;
+  margin-top: 10px;
+  margin: auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#profilePic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+		    #content {
+  float: right;
+  display: flex;
+  min-height: 100vh;
+  height: 200em;
+  width: 80em;
+  min-width: 80%;
+  background-color: blue;
+  margin-left: 22em;
+  text-align: center;
+}
+
+#welcome1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+  
+}
+#welcome1Img {
+  width: 100%;
+}
+#welcome2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  display: none;
+}
+#welcome2Img {
+  width: 100%;
+}
+#pause {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+  z-index: 1; 
+  display: none;
+}
+#play {
+ position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 5%;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+  z-index: 1;
+  display: none;
+}
+.introductionText {
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: black; 
+  text-align: center;
+
+}
+
+
