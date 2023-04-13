@@ -1,112 +1,26 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="index.css" />
       <link
     rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
       <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
-      <title>Tim's Portfolio</title>
-	    
-	    <style> 
-body {
-  margin: 0;
-}
-
-#contentContainer {
-  display: flex;
-  flex-direction: row;
-  min-width: 80%;
-  width: 80em;
-  height: 100%;
-  margin: auto;
-  margin-top: 0;
-  background-color: white;
-  overflow: hidden;
-} 
-		    #navigation {
-  border-width: 0 1px 1px 1px;
-border-style: solid;
-border-color: black;
-  height: 100%;
-  width: 22em;
-  min-width: 20%;
-  position: fixed;
-  background-color: #F2F3F7;
-  text-align: center;
-}
-
-#navLinks li {
-  list-style-type: none;
-  margin-top: 10px;
-  
-  margin-right: 20%;
-}
-
-#profilePicDiv{
-  position: relative;
-  margin-top: 10px;
-  margin: auto;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-#profilePic {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -0%) translateX(107px);
-}
-		    #content {
-  float: right;
-  display: flex;
-  height: 100vh;
-  width: 80em;
-  min-width: 80%;
-  background-color: blue;
-  margin-left: 22em;
-  text-align: center;
-}
-
-#welcome1 {
-  width: 100%;
-  height: 100vh;
-  background-color: orange;
-  
-}
-#welcome2 {
-  width: 100%;
-  height: 100vh;
-  background-color: red;
-  display: none;
-}
-	    </style>
-	    </head>
-	
-	
-  <body>
-	  
-	<!DOCTYPE html>
-<html lang="en">
-	<head>
-      <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-      <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'/>
+		<script src="index.js"></script>
       <title>Tim's Portfolio</title>
 	    
 	    </head>
 	
 	
 	
-  <body>
+  <body onload="startSlideShow()">
 	  
 	  <div id="contentContainer">
       
 		  <div id="navigation">
         <br>
-        <div id="profilePicDiv"><img id="profilePic" src="https://github.com/tim19889/images/blob/main/2.jpg?raw=true"></img></div>
+        <div id="profilePicDiv"><img id="profilePic" src="https://github.com/tim19889/images/blob/main/5.jpg?raw=true"></img></div>
       <h3 id="myName">Tim Porsche</h3>
       <p><i>Web Developer</i></p>
       
@@ -122,17 +36,20 @@ border-color: black;
         
 		  </div>
 		  <div id="content">
+        <img id="pause" src="https://github.com/tim19889/images/blob/main/pause2.png?raw=true"></img>
+    <img id="play" src="https://github.com/tim19889/images/blob/main/play2.png?raw=true"></img>
 		    <div id="welcome1">
-          <h1>Hi! I'm Tim</h1>
-          <img id="welcome1Img"></img>
+          <h1 class="introductionText">Hi! <br>My name's Tim.<br>I'm a Web Developer</h1>
+          
+          <img id="welcome1Img" src="https://github.com/tim19889/images/blob/main/laptop.jpg?raw=true" onClick="startStopSlideShow()"></img>
 		 </div>
         <div id="welcome2">
-          <img id="welcome2Img"></img>
+          <h1 class="introductionText">Scroll down to learn more about my services and how I can help you today.</h1>
+          <img id="welcome2Img" src="https://github.com/tim19889/images/blob/main/snow.jpg?raw=true" onClick="startStopSlideShow()"></img>
         </div>
 		  </div>
     
 	  </div>
 	</body>
-</html>
-	</body>
+
 </html>
