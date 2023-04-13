@@ -7,6 +7,7 @@ let welcome1 = document.getElementById("welcome1");
 let welcome2 = document.getElementById("welcome2");
 
 const startSlideShow = () => {
+	console.log("I'm running")
   interval = setInterval(function() {
     if (imgDisplay === 0) {
     welcome1.style.display = "none";
