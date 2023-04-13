@@ -64,7 +64,7 @@ border-color: black;
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: orange;
+  background-color: blue;
   
 }
 #welcome1Img {
@@ -74,7 +74,7 @@ border-color: black;
   position: relative;
   width: 100%;
   height: 100vh;
-  background-color: red;
+  background-color: blue;
   display: none;
 }
 #welcome2Img {
