@@ -50,12 +50,11 @@ border-color: black;
 }
 		    #content {
   float: right;
-  display: flex;
   min-height: 100vh;
   height: 200em;
   width: 80em;
   min-width: 80%;
-  background-color: blue;
+  background-color: green;
   margin-left: 22em;
   text-align: center;
 }
@@ -63,22 +62,26 @@ border-color: black;
 #welcome1 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: blue;
+  height: 47em;
+  background-color: red;
   
 }
 #welcome1Img {
   width: 100%;
+  height: 100%;
 }
 #welcome2 {
   position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: blue;
+  height: 47em;
   display: none;
+  background-color: orange;
+  
+  
 }
 #welcome2Img {
   width: 100%;
+  height: 100%;
 }
 #pause {
   position: absolute;
@@ -104,12 +107,36 @@ border-color: black;
 }
 .introductionText {
   position: absolute; 
-  top: 40%; 
+  top: 65%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: black; 
   text-align: center;
-
+}
+#about {
+  
+   width: 100%;
+  height: 50em;
+  background-color: red;
+}
+.topintrotxt {
+  margin-left: 15px;
+  text-align: left;
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+.bottomintrotxt {
+  margin-left: 15px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold; 
+}
+#aboutustxt {
+  text-align: left;
+  margin-left: 15px;
+  margin-right: 100px;
 }
 
 
