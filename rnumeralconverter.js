@@ -121,7 +121,7 @@ title.innerHTML = "Roman Numeral to Integer"
 instructions.innerHTML = "Enter Roman Numeral below and click Convert.";
 descriptionText.innerHTML = "";
 resultText.innerHTML = "";
-toggleButton.innerHTML = "Convert Roman Numeral to Integer";
+toggleButton.innerHTML = "Convert Integer to Roman Numeral";
 invalidChars.splice(0);
   toggleStatus = 1;
   }
@@ -134,7 +134,7 @@ invalidChars.splice(0);
  instructions.innerHTML = "Enter number below and click Convert.";
  descriptionText.innerHTML = "";
 resultText.innerHTML = "";
-    toggleButton.innerHTML = "Convert Integer to Roman Numeral";
+    toggleButton.innerHTML = "Convert Roman Numeral to Integer";
     invalidChars.push("e", "E", "-", "+");
     toggleStatus = 0;
   }
