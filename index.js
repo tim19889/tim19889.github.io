@@ -43,3 +43,90 @@ const startStopSlideShow = () => {
 }, 1000);
   }
 }
+
+function showHideEducation(divId) { 
+  let eduTitleDiv = document.getElementById(`${divId}`);
+ let eduContentDiv = document.getElementById(`educationcontent${divId[divId.length-1]}`);
+  let pRightText = document.getElementById(`educationtitlerightp${divId[divId.length-1]}`);
+  
+  if (eduContentDiv.style.height === "0px" || eduContentDiv.style.height === "") {
+    switch (eduContentDiv.id[eduContentDiv.id.length-1]) {
+      case "1" :
+        eduContentDiv.style.height = "69px";
+        break;
+      case "2" :
+        eduContentDiv.style.height = "690px";
+        break;
+      case "3" :
+        eduContentDiv.style.height = "187px";
+        break;
+      case "4" :
+        eduContentDiv.style.height = "268px";
+        break;
+    }
+    eduTitleDiv.style.backgroundColor = "#2C98F0";
+    eduTitleDiv.style.color = "white";
+    eduContentDiv.style.border = "1px solid lightgray";
+    pRightText.innerHTML = "-";
+    
+  }
+  else {
+    eduContentDiv.style.height = "0";
+    eduContentDiv.style.border = "";
+    pRightText.innerHTML = "+";
+    eduTitleDiv.style.backgroundColor = "#F2F3F7";
+    eduTitleDiv.style.color = "black";
+  }
+}
+
+const showMoreProjects = () => {
+  let loadmoreprojects = document.getElementById("loadmoreprojects");
+  let hiddenProjects = document.getElementsByClassName("hiddenprojects");
+  for (let i = 0; i < hiddenProjects.length; i++) {
+    if (hiddenProjects[i].style.display === "" || hiddenProjects[i].style.display === "none") {
+      hiddenProjects[i].style.display = "block";
+      loadmoreprojects.innerHTML = "SHOW LESS";
+    }
+    else {
+      hiddenProjects[i].style.display = "none";
+      loadmoreprojects.innerHTML = "SHOW MORE";
+    }
+  }
+}
+
+const project1 = document.getElementById('project1');
+const project2 = document.getElementById('project2');
+const project3 = document.getElementById('project3');
+const project4 = document.getElementById('project4');
+const project5 = document.getElementById('project5');
+const project6 = document.getElementById('project6');
+const project7 = document.getElementById('project7');
+const project8 = document.getElementById('project8');
+
+  project1.addEventListener('click', () => {
+window.open('https://tim19889.github.io/PasswordGeneratorHtml.html', '_blank');
+  });
+project2.addEventListener('click', () => {
+window.open('https://tim19889.github.io/caesarscipher.html', '_blank');
+  });
+project3.addEventListener('click', () => {
+window.open('https://tim19889.github.io/drummachine', '_blank');
+  });
+project4.addEventListener('click', () => {
+window.open('https://tim19889.github.io/palindromechecker', '_blank');
+  });
+project5.addEventListener('click', () => {
+window.open('https://tim19889.github.io/rnumeralconverter', '_blank');
+  });
+project6.addEventListener('click', () => {
+window.open('https://tim19889.github.io/sessionclock', '_blank');
+  });
+project7.addEventListener('click', () => {
+window.open('https://tim19889.github.io/quotemachine', '_blank');
+  });
+project8.addEventListener('click', () => {
+window.open('https://tim19889.github.io/usphonevalidator', '_blank');
+  });
+
+
+
