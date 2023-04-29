@@ -1,7 +1,9 @@
 body {
   margin: 0;
 }
-
+.bluetext {
+  color: blue;
+}
 #contentContainer {
   display: flex;
   flex-direction: row;
@@ -22,7 +24,7 @@ border-color: black;
   width: 22em;
   min-width: 20%;
   position: fixed;
-  background-color: #F2F3F7;
+  background-color: #e6e6e8;
   text-align: center;
 }
 
@@ -31,6 +33,10 @@ border-color: black;
   margin-top: 10px;
   
   margin-right: 20%;
+}
+#navLinks a {
+  text-decoration: none;
+  color: black;
 }
 
 #profilePicDiv{
@@ -48,14 +54,13 @@ border-color: black;
   width: 100%;
   height: 100%;
 }
-		    #content {
-  float: right;
+	#content {
+  
   min-height: 100vh;
-  height: 200em;
+  height: 400em;
   width: 80em;
   min-width: 80%;
-  background-color: green;
-  margin-left: 22em;
+  margin-left: 23.9em;
   text-align: center;
 }
 
@@ -107,19 +112,18 @@ border-color: black;
 }
 .introductionText {
   position: absolute; 
-  top: 65%; 
+  top: 40%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: black; 
   text-align: center;
 }
 #about {
-  
    width: 100%;
-  height: 50em;
-  background-color: red;
+  height: 28em;
 }
 .topintrotxt {
+  padding-top: 10px;
   margin-left: 15px;
   text-align: left;
   color: gray;
@@ -130,7 +134,7 @@ border-color: black;
 .bottomintrotxt {
   margin-left: 15px;
   text-align: left;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold; 
 }
 #aboutustxt {
@@ -138,5 +142,321 @@ border-color: black;
   margin-left: 15px;
   margin-right: 100px;
 }
+#aboutusbottomcontainer {
+  width: 100%;
+  height: 10em;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.minidivs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  background-color: white;
+  height: 90%;
+  margin-left: 1em;
+  margin-right: 1em;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+.minidivs:hover {
+  background-color: lightgray;
+}
+#minidiv1 {
+  border-bottom: 3px solid purple;
+}
+#minidiv2 {
+  border-bottom: 3px solid red;
+}
+#minidiv3 {
+  border-bottom: 3px solid blue;
+}
+#minidiv4 {
+  margin-right: 7em;
+  border-bottom: 3px solid orange;
+}
+.feather {
+  margin-bottom: 10px;
+}
+#services {
+  width: 100%;
+  height: 28em;
+}
+#servicescontainer {
+  width: 100%;
+  height: 18.1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+}
+.myservices {
+  width: 25%;
+  height: 15em;
+  background-color: white;
+  margin-right: 1.5em;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+#services1 {
+  border-bottom: 3px solid blue;
+}
+#services2 {
+  
+  border-bottom: 3px solid red;
+}
+#services3 {
+  margin-right: 5.5em;
+  border-bottom: 3px solid yellow;
+}
+
+
+.hexagon {
+            top: -8vh;
+            position: relative;
+            margin: 0 auto;
+            background-color: dodgerblue;
+            border-radius: 10px;
+            width: 100px; 
+            height: 63px;
+            box-sizing: border-box;
+            transition: all 1s;
+            border: 0.4vh solid transparent;
+        }
+          
+        .hexagon:before, .hexagon:after {
+            content: "";
+            border: inherit;
+            position: absolute;
+            top: -0.5vh;
+            left: -0.5vh;
+            background-color: dodgerblue;
+            border-radius: inherit;
+            height: 100%;
+            width: 100%;
+        }
+          
+        .hexagon:before {
+            transform: rotate(60deg);
+        }
+        .hexagon:after {
+            transform: rotate(-60deg);
+        }
+
+#education {
+  width: 100%;
+  min-height: 35em;
+  height: auto;
+  background-color: white;
+}
+.educationtitle {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 4em;
+  margin-left: 2em;
+  background-color: #F2F3F7;
+  border: 1px solid lightgray;
+  margin-top: 5px;
+  position: relative; 
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.educationtitle:hover {
+  cursor: pointer;
+}
+#educationtitle1 {
+  margin-top: 4em;
+}
+.educationtitleptext {
+  margin-left: 2em;
+}
+.educationtitleptextright {
+  position: absolute; 
+  right: 1.2em;
+  font-size: 22px;
+}
+.educationcontent {
+  
+  width: 80%;
+  height: 0;
+  margin-left: 2em;
+  margin-top: 5px;
+  overflow: hidden;
+  transition: height 1s ease;
+}
+.certlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 10em;
+  height: 3em;
+  max-width: auto;
+  max-height: auto;
+  background-color: #D0D0D5;
+  border: 2px solid darkblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+.educationcontent a {
+  text-decoration: none;
+}
+
+#portfolio {
+  width: 100%;
+  height: auto;
+}
+#projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-color: white;
+}
+
+.project {
+  width: 40%;
+  height: 20em;
+  text-align: left;
+  font-weight: bold;
+  font-family: helvetica;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  margin-right: 4%;
+  border-radius: 3%;
+  color: transparent;
+  background-color: blue;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: background-image 0.5s ease;
+}
+.hiddenprojects {
+  display: none;
+}
+.project h3, .project p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.project:hover {
+  background-image: url("https://github.com/tim19889/images/blob/main/lightblue.jpg?raw=true") !important;
+  color: white;
+  cursor: pointer;
+}
+
+.project:last-child {
+  margin-bottom: 4%;
+}
+#loadmoreprojects {
+  display: block;
+  width: 70%;
+  height: 4em;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: white;
+  background-color: #2C98F0;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.5%;
+}
+#loadmoreprojects:hover {
+  background-color: #45a6f5;
+}
+
+.appDescription {
+  font-weight: normal;
+  margin-top: 10%;
+  text-align: center;
+}
+#project1 {
+  background-image: url("https://github.com/tim19889/images/blob/main/PasswordGenerator2.jpg?raw=true");
+}
+#project2 {
+  background-image: url("https://github.com/tim19889/images/blob/main/caesarscipher.jpg?raw=true");
+}
+#project3 {
+  background-image: url("https://github.com/tim19889/images/blob/main/drummachine.jpg?raw=true");
+}
+#project4 {
+  background-image: url("https://github.com/tim19889/images/blob/main/palindromechecker.jpg?raw=true");
+}
+#project5 {
+  background-image: url("https://github.com/tim19889/images/blob/main/romannumeralconverter.jpg?raw=true");
+}
+#project6 {
+  background-image: url("https://github.com/tim19889/images/blob/main/sessionclock.jpg?raw=true");
+}
+#project7 {
+  background-image: url("https://github.com/tim19889/images/blob/main/quotemachine.jpg?raw=true");
+}
+#project8 {
+  background-image: url("https://github.com/tim19889/images/blob/main/usphonevalidator.jpg?raw=true");
+}
+
+#contactus {
+  
+  width: 100%;
+  height: 40em;
+  background-color: yellow;
+  margin-top: 5em;
+}
+#contactuscontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactdiv {
+  width: 40%;
+  height: 22em;
+  background-color: white;
+  display: inline-block;
+  margin-right: 4%;
+  margin-top: 4em;
+}
+#contactinfo {
+  margin-right: 2em;
+}
+#contactform {
+  margin-left: 2em;
+}
+.contactleftdiv {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 25%;
+  background-color: white;
+  margin-top: 5%;
+}
+.contactleftdiv a {
+  text-decoration: none;
+  margin: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+.contactleftdiv p {
+  font-size: 18px;
+  margin: auto;
+}
+.cldleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23%;
+  height: 100%;
+  background-color: #e6e6e8;
+}
+
+
+
+
+
 
 
