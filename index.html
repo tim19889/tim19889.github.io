@@ -26,9 +26,9 @@
           <li><a>Home</a></li>
         <li><a>About</a></li>
         <li><a>Services</a></li>
+          <li><a>Education</a></li>
         <li><a>Portfolio</a></li>
-        <li><a>Experience</a></li>
-        <li><a>Testimonials</a></li>
+          <li><a href="https://github.com/tim19889/FreeCodeCamp-Projects" target="_blank">GitHub</a></li>
         <li><a>Contact</a></li>
         </ul>
         
@@ -48,12 +48,215 @@
 <div id="about">
   <p class="topintrotxt">About Us</p>
   <h2 class="bottomintrotxt">WHO AM I?</h2>
-  <p id="aboutustxt">Hi there! My name is Tim Porsche. I started my career in IT back in 2013 and have worked doing Desktop Support for the past 10 years. In 2022 I started tinkering with web development by learning HTML, CSS, and Javascript from FreeCodeCamp, Codecademy, and W3Schools among others. During this time I fell in love with coding and successfully completed all of the FreeCodeCamp Frontend Web Development courses and have built my projects of my own that you can find in my portfolio (add link) below.<br><br>If you need a website created, or have an existing one that you'd like to have redesigned or updated, it would be my pleasure to help you. I can also build all manner of frontend web applications for you using my detailed knowledge of Javascript, jQuery, React, CSS, and HTML. Click here to contact me and see how I can help you today.</p>
+  <p id="aboutustxt">Hi there! My name is Tim Porsche. I started my career in IT back in 2013 and have worked doing Desktop Support for the past 10 years. In 2022 I started tinkering with web development by learning HTML, CSS, and Javascript from FreeCodeCamp, Codecademy, and W3Schools among others. During this time I fell in love with coding and successfully completed all of the FreeCodeCamp Frontend Web Development courses and have built various projects of my own that you can find in my portfolio (add link) below.<br><br>If you need a website created, or have an existing one that you'd like to have redesigned or updated, it would be my pleasure to help you. I can also build all manner of frontend web applications for you using my detailed knowledge of Javascript, jQuery, React, CSS, and HTML. Click here to contact me and see how I can help you today.</p>
+  <div id="aboutusbottomcontainer">
+    <div class="minidivs" id="minidiv1"><i data-feather="layout" class="feather"></i>Web Development</div>
+    <div class="minidivs" id="minidiv2"><i data-feather="smartphone" class="feather"></i>Mobile</div>
+    <div class="minidivs" id="minidiv3"><i data-feather="code" class="feather"></i>HTML, CSS, Javascript</div>
+    <div class="minidivs" id="minidiv4"><i data-feather="book" class="feather"></i>React, jQuery</div>
+    
+  </div>
+  <div id="services">
+    <p class="topintrotxt">Services Offered</p>
+  <h2 class="bottomintrotxt">HERE ARE SOME OF MY AREAS OF EXPERTISE</h2>
+    <div id="servicescontainer">
+      <div id="services1" class="myservices">
+        <div class="hexagon" id="hexagon1"></div>
+        <h3>Web Design</h3>
+      </div>
+      <div id="services2" class="myservices">
+        <div class="hexagon" id="hexagon2"></div>
+        <h3>Web Apps</h3>
+      </div>
+      <div id="services3" class="myservices">
+        <div class="hexagon" id="hexagon3"></div>
+        <h3>Custom Websites</h3>
+      </div>
+    </div>
+  </div>
+  <div id="education">
+    <p class="topintrotxt">Education</p>
+  <h2 class="bottomintrotxt">MY EDUCATION</h2>
+    <div id="educationtitle1" class="educationtitle" onclick="showHideEducation(this.id)">
+      <p id="educationtitleleftp1" class="educationtitleptext">HIGH SCHOOL DIPLOMA</p>
+      <p id="educationtitlerightp1" class="educationtitleptext educationtitleptextright">+
+      </p></div>
+    <div id="educationcontent1" class="educationcontent">
+      <ul>
+        <li><h2>Received High School Diploma in 2007</h2></li>
+      </ul>
+    </div>
+    <div id="educationtitle2" class="educationtitle" onclick="showHideEducation(this.id)">
+      <p id="educationtitleleftp1" class="educationtitleptext">FREE CODE CAMP</p>
+      <p id="educationtitlerightp2" class="educationtitleptext educationtitleptextright">+</p>
+    </div>
+    <div id="educationcontent2" class="educationcontent">
+      <h2>Free Code Camp FrontEnd Development</h2>
+      <p>From early 2022 to early 2023 I have successfully worked through the entire Free Code Camp FrontEnd Developer currriculum and completed all required projects for the courses listed below to earn the certifications for each one.</p>
+      <h3>Responsive Web Design</h3>
+      <p>Here I learned the basics of working with HTML, CSS, and Flexbox.</p>
+      <a href="https://www.freecodecamp.org/certification/Tim19889/responsive-web-design" target="_blank"><div class="certlinks">View Certification</div></a>
+      <h3>Javascript Algorithms and Data Structures</h3>
+      <p>Here I learned the fundamentals of coding with Javascript, including variables, loops, arrays, functions, ES6, objects, etc.</p>
+      <a href="https://www.freecodecamp.org/certification/Tim19889/javascript-algorithms-and-data-structures" target="_blank"><div class="certlinks">View Certification</div></a>
+      <h3>Front End Development Libraries</h3>
+      <p>Here I worked and became familiar with some of the most widely used front end libraries, including React, jQuery, Bootstrap, and Sass.</p>
+      <a href="https://www.freecodecamp.org/certification/Tim19889/front-end-development-libraries" target="_blank"><div class="certlinks">View Certification</div></a>
+    </div>
+    
+    
+    <div id="educationtitle3" class="educationtitle" onclick="showHideEducation(this.id)">
+      <p id="educationtitleleftp1" class="educationtitleptext">COMPTIA CERTIFICATIONS</p>
+      <p id="educationtitlerightp3" class="educationtitleptext educationtitleptextright">+</p>
+    </div>
+    <div id="educationcontent3" class="educationcontent">
+      <h2>CompTIA Certifications</h2>
+      <p>When first starting out in IT Support, I studied for and obtained the following CompTIA certifications:</p>
+      <ul>
+        <li><h3>CompTIA A+</h3></li>
+        <li><h3>CompTIA Network+</h3></li>
+      </ul>
+    </div>
+    <div id="educationtitle4" class="educationtitle" onclick="showHideEducation(this.id)">
+      <p id="educationtitleleftp1" class="educationtitleptext">MICROSOFT CERTIFICATIONS</p>
+      <p id="educationtitlerightp4" class="educationtitleptext educationtitleptextright">+</p>
+    </div>
+    <div id="educationcontent4" class="educationcontent">
+      <h2>Microsoft Certifications</h2>
+      <p>After working in a Desktop Support role for a few years, I studied for and obtained the following Microsoft certifications:</p>
+      <ul>
+        <li><h3>MCITP: Windows 7 Enterprise Desktop Support Technician</h3></li>
+        <li><h3>MCTS: Configuring Windows 7</h3></li>
+        <li><h3>MCTS: Deploying Windows 7 and Office 2010</h3></li>
+        <li><h3>MCSA: Installing and Configuring Windows Server 2012</h3></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+  <div id="portfolio">
+    <p class="topintrotxt">MY PORTFOLIO</p>
+  <h2 class="bottomintrotxt">RECENT WORK</h2>
+    <div id="projectsContainer">
+      
+      <div class="project" id="project1">
+        <h3>RANDOM PASSWORD GENERATOR</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This simple Javascript app allows you to create a random password between 6 - 100 characters in length. You can choose to incorporate any combination of lowercase letters, uppercase letters, special characters, and numbers in your password. It includes a button to easily copy your new password.</p>
+        </div>
+      <div class="project" id="project2">
+        <h3>CAESAR'S CIPHER</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This Caesar's Cipher app uses the common modern ROT13 cipher, where the values of the letters are shifted by 13 places. Thus A ↔ N, B ↔ O and so on. The app allows you to both encrypt and decrypt messages.</p>
+      </div>
+      <div class="project" id="project3">
+        <h3>Drum Machine</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">A simple drum machine that can be configured to play different sounds depending on what button is pressed on the keyboard or clicked on screen. It has an on/off button, as well as a volume adjuster.</p>
+      </div>
+      <div class="project" id="project4">
+        <h3>Palindrome Checker</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This Palindrome Checker takes an input from the user and then checks to see if it is a valid palindrome or not. A palindrome is an alpha-numeric word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+        </p>
+      </div>
+      
+      <div class="project" id="project5">
+        <h3>Roman Numeral Converter</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">Roman Numeral converter than can convert a number to a Roman Numeral, or convert a Roman Numeral to a number. If an invalid Roman Numeral is entered, it will tell you so. 
+        </p>
+      </div>
+      <div class="project" id="project6">
+        <h3>25 + 5 Session Clock</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This session/break clock allows you to set the amount of time you'd like to work for along with the amount of time you want to take a break for. It's in the style of an old digital alarm clock and allows you to start\pause the session by pressing the green button, and reset the session by pressing the red button.  
+        </p>
+      </div>
+      
+      <div class="project" id="project7">
+        <h3>Random Quote Machine</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This random quote machine displays a random quote from an array along with the author's name. It also allows you to add your own quotes and authors to the array.   
+        </p>
+      </div>
+      
+      <div class="project" id="project8">
+        <h3>US Phone Number Validator</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This app takes an input and allows you to check if the input is in the format of a valid US telephone number or not. 
+        </p>
+      </div>
+      
+      <div class="project hiddenprojects" id="project9">
+        <h3>US Phone Number Validator</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This app takes an input and allows you to check if the input is in the format of a valid US telephone number or not. 
+        </p>
+      </div>
+      <div class="project hiddenprojects" id="project10">
+        <h3>US Phone Number Validator</h3>
+        <p>Javascript App</p>
+        <p class="appDescription">This app takes an input and allows you to check if the input is in the format of a valid US telephone number or not. 
+        </p>
+      </div>
+      
+      <button id="loadmoreprojects" onclick="showMoreProjects()">SHOW MORE</button>
+    </div>
+    
+  </div>
+  <div id="contactus">
+    <p class="topintrotxt">GET IN TOUCH</p>
+  <h2 class="bottomintrotxt">CONTACT</h2>
+    <div id="contactuscontainer">
+    <div id="contactinfo" class="contactdiv">
+      <div id="email" class="contactleftdiv">
+        <div id="cldleft1" class="cldleft">
+          <i data-feather="send" class="feather bluetext"></i>
+        </div>
+        <a href="mailto:timtheporsche@gmail.com">timtheporsche@gmail.com</a>
+      </div>
+      <div id="mailingaddress" class="contactleftdiv">
+        <div id="cldleft1" class="cldleft">
+          <i data-feather="home" class="feather bluetext"></i>
+        </div>
+        <p>117 W Walnut Street, Apt 2,<br>Shillington, PA, 19607
+      </div>
+      <div id="phone" class="contactleftdiv">
+        <div id="cldleft1" class="cldleft">
+          <i data-feather="phone" class="feather bluetext"></i>
+        </div>
+        <a href="tel:1-484-248-5893">1-484-248-5893</a>
+      </div>
+    </div>
+    <div id="contactform" class="contactdiv">
+      
+      <form id="contactForm" action="https://formspree.io/f/xqkonzjo"
+  method="POST>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="subject">Subject:</label>
+  <input type="text" id="subject" name="subject" required>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+    </div>
+    </div>
+  </div>
+  
 </div>
 		  </div>
     
 	  </div>
 	  
-<script src="index.js"></script>
+	  <script src="https://unpkg.com/feather-icons"></script>
+<script>feather.replace()</script>
 	</body>
 </html>
