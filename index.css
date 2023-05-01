@@ -21,8 +21,7 @@ body {
 border-style: solid;
 border-color: black;
   height: 100%;
-  width: 22em;
-  min-width: 20%;
+  width: 20%;
   position: fixed;
   background-color: #e6e6e8;
   text-align: center;
@@ -55,12 +54,10 @@ border-color: black;
   height: 100%;
 }
 	#content {
-  
-  min-height: 100vh;
-  height: 400em;
-  width: 80em;
-  min-width: 80%;
-  margin-left: 23.9em;
+    margin-left: 19.8em;
+    min-height: 100vh;
+  height: 292em;
+  width: 78%;
   text-align: center;
 }
 
@@ -399,12 +396,30 @@ border-color: black;
 #project8 {
   background-image: url("https://github.com/tim19889/images/blob/main/usphonevalidator.jpg?raw=true");
 }
+#project9 {
+  background-image: url("https://github.com/tim19889/images/blob/main/wordle2.jpg?raw=true");
+}
+#project10 {
+  background-image: url("https://github.com/tim19889/images/blob/main/wordle1.jpg?raw=true");
+}
+#project11 {
+  background-image: url("https://github.com/tim19889/images/blob/main/cashregister.jpg?raw=true");
+}
+#project12 {
+  background-image: url("https://github.com/tim19889/images/blob/main/cashregister.jpg?raw=true");
+}
+#project13 {
+  background-image: url("https://github.com/tim19889/images/blob/main/calculator.jpg?raw=true");
+}
+#project14 {
+  background-image: url("https://github.com/tim19889/images/blob/main/markdownpreviewer.jpg?raw=true");
+}
 
 #contactus {
   
   width: 100%;
   height: 40em;
-  background-color: yellow;
+  
   margin-top: 5em;
 }
 #contactuscontainer {
@@ -453,10 +468,14 @@ border-color: black;
   height: 100%;
   background-color: #e6e6e8;
 }
-
-
-
-
-
-
+#formsubmit {
+  margin-top: 1em;
+}
+.inputs {
+  margin-top: 1.5em;
+}
+#message {
+  resize: none;
+  height: 7em;
+}
 
