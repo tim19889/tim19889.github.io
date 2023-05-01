@@ -16,7 +16,7 @@ body {
   background-color: white;
   overflow: hidden;
 } 
-		    #navigation {
+	#navigation {
   border-width: 0 1px 1px 1px;
 border-style: solid;
 border-color: black;
@@ -25,6 +25,7 @@ border-color: black;
   position: fixed;
   background-color: #e6e6e8;
   text-align: center;
+overflow: auto;
 }
 
 #navLinks li {
