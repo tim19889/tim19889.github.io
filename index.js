@@ -80,15 +80,18 @@ function showHideEducation(divId) {
 }
 
 const showMoreProjects = () => {
+  let content = document.getElementById("content");
   let loadmoreprojects = document.getElementById("loadmoreprojects");
   let hiddenProjects = document.getElementsByClassName("hiddenprojects");
   for (let i = 0; i < hiddenProjects.length; i++) {
     if (hiddenProjects[i].style.display === "" || hiddenProjects[i].style.display === "none") {
       hiddenProjects[i].style.display = "block";
+      content.style.height = "360em"
       loadmoreprojects.innerHTML = "SHOW LESS";
     }
     else {
       hiddenProjects[i].style.display = "none";
+      content.style.height = "292em"
       loadmoreprojects.innerHTML = "SHOW MORE";
     }
   }
@@ -102,6 +105,12 @@ const project5 = document.getElementById('project5');
 const project6 = document.getElementById('project6');
 const project7 = document.getElementById('project7');
 const project8 = document.getElementById('project8');
+const project9 = document.getElementById('project9');
+const project10 = document.getElementById('project10');
+const project11 = document.getElementById('project11');
+const project12 = document.getElementById('project12');
+const project13 = document.getElementById('project13');
+const project14 = document.getElementById('project14');
 
   project1.addEventListener('click', () => {
 window.open('https://tim19889.github.io/PasswordGeneratorHtml.html', '_blank');
@@ -126,6 +135,24 @@ window.open('https://tim19889.github.io/quotemachine', '_blank');
   });
 project8.addEventListener('click', () => {
 window.open('https://tim19889.github.io/usphonevalidator', '_blank');
+  });
+project9.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/vYzzVdQ', '_blank');
+  });
+project10.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/rNZdvrJ', '_blank');
+  });
+project11.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/dyqdEKp', '_blank');
+  });
+project12.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/VwGeoaj', '_blank');
+  });
+project13.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/gOjPmbO', '_blank');
+  });
+project14.addEventListener('click', () => {
+window.open('https://codepen.io/tim19889/pen/rNKgKWo', '_blank');
   });
 
 
