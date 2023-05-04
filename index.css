@@ -16,7 +16,7 @@ body {
   background-color: white;
   overflow: hidden;
 } 
-	#navigation {
+		    #navigation {
   border-width: 0 1px 1px 1px;
 border-style: solid;
 border-color: black;
@@ -25,7 +25,7 @@ border-color: black;
   position: fixed;
   background-color: #e6e6e8;
   text-align: center;
-overflow: auto;
+  overflow: auto;
 }
 
 #navLinks li {
@@ -55,7 +55,7 @@ overflow: auto;
   height: 100%;
 }
 	#content {
-    margin-left: 19.8em;
+    margin-left: 21em;
     min-height: 100vh;
   height: 292em;
   width: 78%;
@@ -67,7 +67,7 @@ overflow: auto;
   width: 100%;
   height: 47em;
   background-color: red;
-  
+  margin-left: -1.2em;
 }
 #welcome1Img {
   width: 100%;
@@ -79,8 +79,7 @@ overflow: auto;
   height: 47em;
   display: none;
   background-color: orange;
-  
-  
+  margin-left: -1.2em;
 }
 #welcome2Img {
   width: 100%;
@@ -88,7 +87,7 @@ overflow: auto;
 }
 #pause {
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 60%;
   transform: translate(-50%, -50%);
   width: 5%;
@@ -99,7 +98,7 @@ overflow: auto;
 }
 #play {
  position: absolute;
-  top: 50%;
+  top: 80%;
   left: 60%;
   transform: translate(-50%, -50%);
   width: 5%;
@@ -110,11 +109,108 @@ overflow: auto;
 }
 .introductionText {
   position: absolute; 
-  top: 40%; 
+  top: 20%; 
   left: 50%; 
   transform: translate(-50%, -50%); 
   color: black; 
   text-align: center;
+  font-family: Times New Roman;
+  font-weight: bold;
+}
+.introTextFont {
+  margin-top: 0.2em;
+  font-family: Times New Roman;
+  font-weight: bold;
+}
+#deskimagecontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; 
+  top: 20%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 30em;
+  height: 15em;
+  border: 10px solid #692b1b;
+  border-radius: 3%;
+}
+#line {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  position: relative;
+  height: 14.5em;
+  width: 29em;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+#hanger {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px; 
+  height: 15px; 
+  background-color: black; 
+  top: -7%;
+  left: 46%;
+  border-radius: 50%;
+}
+#hangernail {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: gray;
+}
+#oceantextcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute; 
+  top: 20%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 33em;
+  height: 15em;
+}
+#oceantextcontainer a {
+  text-decoration: none;
+  color: black;
+}
+.portfolioLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  height: 2.5em;
+  border: 2px solid black;
+}
+
+#portfolioLink1 {
+  position: absolute;
+  top: 75%;
+  left: 35%;
+}
+#portfolioLink2 {
+  position: absolute;
+  top: 73%;
+  left: 35%;
+}
+.portfolioLink:hover {
+  cursor: pointer;
+}
+#line a {
+  text-decoration: none;
+  color: black;
+}
+.portfolioLink a:hover {
+  color: black;
+}
+.introFeatherIcons {
+  margin-top: 5%;
+  margin-left: 5%;
 }
 #about {
    width: 100%;
@@ -416,6 +512,12 @@ overflow: auto;
 #project14 {
   background-image: url("https://github.com/tim19889/images/blob/main/markdownpreviewer.jpg?raw=true");
 }
+#project15 {
+  background-image: url("https://github.com/tim19889/images/blob/main/nailshomepage.jpg?raw=true");
+}
+#project16 {
+  background-image: url("https://github.com/tim19889/images/blob/main/powershellnewuser.jpg?raw=true");
+}
 
 #contactus {
   
@@ -480,4 +582,3 @@ overflow: auto;
   resize: none;
   height: 7em;
 }
-
