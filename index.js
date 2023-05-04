@@ -55,7 +55,7 @@ function showHideEducation(divId) {
         eduContentDiv.style.height = "69px";
         break;
       case "2" :
-        eduContentDiv.style.height = "690px";
+        eduContentDiv.style.height = "740px";
         break;
       case "3" :
         eduContentDiv.style.height = "187px";
