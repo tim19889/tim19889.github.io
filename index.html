@@ -40,18 +40,30 @@
         <img id="pause" src="https://github.com/tim19889/images/blob/main/pause2.png?raw=true"></img>
     <img id="play" src="https://github.com/tim19889/images/blob/main/play2.png?raw=true"></img>
 		    <div id="welcome1" onclick="startStopSlideShow()">
-          <h1 class="introductionText">Hi! <br>My name's Tim.<br>I'm a Web Developer</h1>
-          <img id="welcome1Img" src="https://github.com/tim19889/images/blob/main/laptop.jpg?raw=true"></img>
+          <div id="deskimagecontainer">
+            <div id="line">
+              <div id="hanger">
+                <div id="hangernail">
+                </div>
+              </div>
+          <h1 class="introTextFont">Hi! <br>My name's Tim.<br>I'm a Web Developer.</h1>
+              <a href="#portfolio"><div id="portfolioLink2" class="portfolioLink">View Portfolio<i data-feather="briefcase" class="feather introFeatherIcons"></i></div></a>
+            </div>
+          </div>
+          <img id="welcome1Img" src="https://github.com/tim19889/images/blob/main/whitedesk.jpg?raw=true"></img>
 		 </div>
         <div id="welcome2" onclick="startStopSlideShow()">
-          <h1 class="introductionText">Scroll down to learn more about my services and how I can help you today.</h1>
-          <img id="welcome2Img" src="https://github.com/tim19889/images/blob/main/snow.jpg?raw=true"></img>
+          <div id="oceantextcontainer">
+          <h1 class="introTextFont">Continue browsing below to learn how I can help you.</h1>
+            <a href="#about"><div id="portfolioLink1" class="portfolioLink">About Us<i data-feather="book-open" class="feather introFeatherIcons"></i></div></a>
+          </div>
+          <img id="welcome2Img" src="https://github.com/tim19889/images/blob/main/mistyocean.jpg?raw=true"></img>
         </div>
           
 <div id="about">
   <p class="topintrotxt">About Us</p>
   <h2 class="bottomintrotxt">WHO AM I?</h2>
-  <p id="aboutustxt">Hi there! My name is Tim Porsche. I started my career in IT back in 2013 and have worked doing Desktop Support for the past 10 years. In 2022 I started tinkering with web development by learning HTML, CSS, and Javascript from FreeCodeCamp, Codecademy, and W3Schools among others. During this time I fell in love with coding and successfully completed all of the FreeCodeCamp Frontend Web Development courses and have built various projects of my own that you can find in my portfolio (add link) below.<br><br>If you need a website created, or have an existing one that you'd like to have redesigned or updated, it would be my pleasure to help you. I can also build all manner of frontend web applications for you using my detailed knowledge of Javascript, jQuery, React, CSS, and HTML. Click here to contact me and see how I can help you today.</p>
+  <p id="aboutustxt">Hi there! My name is Tim Porsche. I started my career in IT back in 2013 and have worked doing Desktop Support for the past 10 years. In 2022 I started tinkering with web development by learning HTML, CSS, and Javascript from FreeCodeCamp, Codecademy, and W3Schools among others. During this time I fell in love with coding and successfully completed all of the FreeCodeCamp Frontend Web Development courses and have built various projects of my own that you can find in my <a href="#portfolio">portfolio</a> below.<br><br>If you need a website created, or have an existing one that you'd like to have redesigned or updated, it would be my pleasure to help you. I can also build all manner of frontend web applications for you using my detailed knowledge of Javascript, jQuery, React, CSS, and HTML. Click <a href="#contactus">here</a> to contact me and see how I can help you today.</p>
   <div id="aboutusbottomcontainer">
     <div class="minidivs" id="minidiv1"><i data-feather="layout" class="feather"></i>Web Development</div>
     <div class="minidivs" id="minidiv2"><i data-feather="smartphone" class="feather"></i>Mobile</div>
@@ -229,6 +241,20 @@
         <h3>Markdown Previewer</h3>
         <p>React App</p>
         <p class="appDescription">My version of an HTML markdown app. It allows you to type in the text in the editor window at the top and see the text rendered in Markdown in the Preview window below as you type. 
+        </p>
+      </div>
+      
+      <div class="project hiddenprojects" id="project15">
+        <h3>Nail Salon Website</h3>
+        <p>Website</p>
+        <p class="appDescription">This is a website I created for a client using the wix.com hosting platform. I actively manage and maintain this website for the client. Most recently, we added a page to allow purchasing gift cards online via Paypal and Venmo.
+        </p>
+      </div>
+      
+      <div class="project hiddenprojects" id="project16">
+        <h3>New User Creation Script</h3>
+        <p>Powershell</p>
+        <p class="appDescription">This is a Powershell script I created to simplify the process of creating new users in Active Directory for myself and others on my team. It has cut down the time to create new users from about 20 minutes to 5 minutes or less.
         </p>
       </div>
       
