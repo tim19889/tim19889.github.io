@@ -7,8 +7,7 @@ body {
 #contentContainer {
   display: flex;
   flex-direction: row;
-  min-width: 80%;
-  width: 80em;
+  width: 80%;
   min-height: 100%;
   height: auto;
   margin: auto;
@@ -16,23 +15,24 @@ body {
   background-color: white;
   overflow: hidden;
 } 
-		    #navigation {
+	#navigation {
   border-width: 0 1px 1px 1px;
-border-style: solid;
-border-color: black;
+  border-style: solid;
+  border-color: black;
   height: 100%;
   width: 20%;
   position: fixed;
   background-color: #e6e6e8;
   text-align: center;
   overflow: auto;
+  z-index: 5;
 }
 
 #navLinks li {
   list-style-type: none;
   margin-top: 10px;
-  
   margin-right: 20%;
+  font-size: 1em;
 }
 #navLinks a {
   text-decoration: none;
@@ -43,8 +43,8 @@ border-color: black;
   position: relative;
   margin-top: 10px;
   margin: auto;
-  width: 220px;
-  height: 220px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -55,18 +55,37 @@ border-color: black;
   height: 100%;
 }
 	#content {
-    margin-left: 21em;
+    z-index: 1;
+    margin-left: 25%;
     min-height: 100vh;
   height: 292em;
   width: 78%;
   text-align: center;
 }
-
+#mobilemenubtn {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  width: 2em;
+  height: 2em;
+  top: 2%;
+  left: 2%;
+  background-color: transparent;
+  opacity: 0.3;
+}
+#mobilemenubtn:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.btnline {
+  border-bottom: 2px solid black;
+  margin-top: 20%;
+}
 #welcome1 {
   position: relative;
   width: 100%;
   height: 47em;
-  margin-left: -1.2em;
 }
 #welcome1Img {
   width: 100%;
@@ -77,7 +96,7 @@ border-color: black;
   width: 100%;
   height: 47em;
   display: none;
-  margin-left: -1.2em;
+  background-color: orange;
 }
 #welcome2Img {
   width: 100%;
@@ -189,12 +208,12 @@ border-color: black;
 #portfolioLink1 {
   position: absolute;
   top: 75%;
-  left: 35%;
+  left: 33%;
 }
 #portfolioLink2 {
   position: absolute;
   top: 73%;
-  left: 35%;
+  left: 33%;
 }
 .portfolioLink:hover {
   cursor: pointer;
@@ -518,10 +537,8 @@ border-color: black;
 }
 
 #contactus {
-  
   width: 100%;
   height: 40em;
-  
   margin-top: 5em;
 }
 #contactuscontainer {
@@ -580,3 +597,134 @@ border-color: black;
   resize: none;
   height: 7em;
 }
+.breakWord {
+  overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+@media (max-width: 1000px) {
+  #navigation {
+    display: none;
+  }
+  #play {
+    top: 70%;
+  left: 50%;
+  }
+  #pause {
+    top: 70%;
+    left: 50%;
+  }
+  #contentContainer {
+    width: 100%;
+  }
+  #content {
+    width: 100%;
+    margin-left: 0;
+    height: 480em;
+  }
+  #mobilemenubtn {
+    display: flex;
+  }
+  #deskimagecontainer {
+    top: 21%;
+    width: 24em;
+  }
+  #portfolioLink1 {
+    left: 31%;
+  }
+  #portfolioLink2 {
+    left: 31%
+  }
+  #contactuscontainer {
+  display: block;
+  justify-content: center;
+}
+.contactdiv {
+  width: 90%;
+  height: 22em;
+  background-color: white;
+  margin-right: 4%;
+  margin-top: 4em;
+}
+  #aboutustxt {
+    margin: auto;
+    margin-left: 1em;
+  }
+  #aboutusbottomcontainer {
+    margin: auto;
+    width: 100%;
+    height: 200%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  .minidivs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: white;
+  margin-bottom: 5%;
+    margin-top: 5%;
+}
+  #minidiv4 {
+    margin-right: 1em;
+  }
+  #services {
+  width: 100%;
+  height: 60em;
+}
+  #servicescontainer {
+  display: block;
+ width: 100%;
+  height: 20em;
+  margin-top: 10em;
+}
+  .myservices {
+    display: block;
+    margin: auto;
+  width: 50%;
+  height: 50%;
+  margin-top: 10%;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+  #services3 {
+    margin: auto;
+    margin-top: 10%;
+  }
+  .project {
+  width: 70%;
+    margin-right: 0;
+  }
+}
+  @media (max-width: 600px) {
+    #services {
+  width: 100%;
+  height: 64em;
+}
+  #servicescontainer {
+  display: block;
+ width: 100%;
+  height: 20em;
+  margin-top: 10em;
+}
+  .myservices {
+    display: block;
+    margin: auto;
+  width: 50%;
+  height: 50%;
+  margin-top: 25%;
+  background-color: white;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+  #services3 {
+    margin: auto;
+    margin-top: 25%;
+  }
+  }
+  
+ 
