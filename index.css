@@ -138,6 +138,7 @@ body {
   margin-top: 0.2em;
   font-family: Times New Roman;
   font-weight: bold;
+  font-size: 2em;
 }
 #deskimagecontainer {
   display: flex;
@@ -238,20 +239,21 @@ body {
   margin-left: 15px;
   text-align: left;
   color: gray;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: bold;
   
 }
 .bottomintrotxt {
   margin-left: 15px;
   text-align: left;
-  font-size: 23px;
+  font-size: 1.5em;
   font-weight: bold; 
 }
 #aboutustxt {
   text-align: left;
   margin-left: 15px;
   margin-right: 100px;
+  font-size: 1em;
 }
 #aboutusbottomcontainer {
   width: 100%;
@@ -727,4 +729,4 @@ body {
   }
   }
   
- 
+  
