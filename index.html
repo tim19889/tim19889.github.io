@@ -17,7 +17,11 @@
   <body onload="startSlideShow()">
 	  
 	  <div id="contentContainer">
-      
+      <div id="mobilemenubtn" onclick="showMobileMenu()">
+          <div class="btnline"></div>
+          <div class="btnline"></div>
+          <div class="btnline"></div>
+        </div>
 		  <div id="navigation">
         <br>
         <div id="profilePicDiv"><img id="profilePic" src="https://github.com/tim19889/images/blob/main/5.jpg?raw=true"></img></div>
@@ -36,7 +40,8 @@
         </ul>
         
 		  </div>
-		  <div id="content">
+		  <div id="content" onclick="hideMobileMenu()">
+        
         <img id="pause" src="https://github.com/tim19889/images/blob/main/pause2.png?raw=true"></img>
     <img id="play" src="https://github.com/tim19889/images/blob/main/play2.png?raw=true"></img>
 		    <div id="welcome1" onclick="startStopSlideShow()">
@@ -273,16 +278,16 @@
         <div id="cldleft1" class="cldleft">
           <i data-feather="send" class="feather bluetext"></i>
         </div>
-        <a href="mailto:timtheporsche@gmail.com">timtheporsche@gmail.com</a>
+        <a href="mailto:timtheporsche@gmail.com" class="breakWord">timtheporsche@gmail.com</a>
       </div>
       <div id="mailingaddress" class="contactleftdiv">
-        <div id="cldleft1" class="cldleft">
+        <div id="cldleft2" class="cldleft">
           <i data-feather="home" class="feather bluetext"></i>
         </div>
-        <p>117 W Walnut Street, Apt 2,<br>Shillington, PA, 19607
+        <p>117 W Walnut Street, Apt 2,<br>Shillington, PA, 19607</p>
       </div>
       <div id="phone" class="contactleftdiv">
-        <div id="cldleft1" class="cldleft">
+        <div id="cldleft3" class="cldleft">
           <i data-feather="phone" class="feather bluetext"></i>
         </div>
         <a href="tel:1-484-248-5893">1-484-248-5893</a>
