@@ -5,6 +5,7 @@ let pauseImg = document.getElementById("pause");
 let playImg = document.getElementById("play");
 let welcome1 = document.getElementById("welcome1");
 let welcome2 = document.getElementById("welcome2");
+let mobileMenuStatus = 0;
 
 const startSlideShow = () => {
   interval = setInterval(function() {
@@ -83,19 +84,48 @@ const showMoreProjects = () => {
   let content = document.getElementById("content");
   let loadmoreprojects = document.getElementById("loadmoreprojects");
   let hiddenProjects = document.getElementsByClassName("hiddenprojects");
+  let screenWidth = window.innerWidth;
+  
   for (let i = 0; i < hiddenProjects.length; i++) {
     if (hiddenProjects[i].style.display === "" || hiddenProjects[i].style.display === "none") {
       hiddenProjects[i].style.display = "block";
-      content.style.height = "377em"
       loadmoreprojects.innerHTML = "SHOW LESS";
     }
     else {
       hiddenProjects[i].style.display = "none";
-      content.style.height = "292em"
       loadmoreprojects.innerHTML = "SHOW MORE";
     }
+    }
+  if (screenWidth > 1000) {
+    if (loadmoreprojects.innerHTML === "SHOW LESS") 
+    {content.style.height = "379em"}
+    else {content.style.height = "290em"}
+      }
+  else {
+    if (loadmoreprojects.innerHTML === "SHOW LESS") 
+      {content.style.height = "665em"}
+    else {content.style.height = "480em"}
+  }
+  }
+
+const showMobileMenu = () => {
+  let navigationMenu = document.getElementById("navigation");
+  
+  mobileMenuStatus = 1;
+  navigationMenu.style.display = "block";
+  navigationMenu.style.width = "50%";
+}
+
+const hideMobileMenu = () => {
+  let screenWidth = window.innerWidth;
+  let navigationMenu = document.getElementById("navigation");
+  if (mobileMenuStatus === 1 && screenWidth <= 1000) {
+    mobileMenuStatus = 0;
+    navigationMenu.style.display = "none";
+    
   }
 }
+
 
 const project1 = document.getElementById('project1');
 const project2 = document.getElementById('project2');
@@ -162,4 +192,35 @@ window.open('https://www.nailsvv.com/', '_blank');
 project16.addEventListener('click', () => {
 window.open('https://github.com/tim19889/Powershell/blob/main/CreateUser-New.ps1', '_blank');
   });
+
+//The height of the #content div needs to be changed based on screen size and whether or not the hidden projects are being shown. This event listener takes care of that.
+window.addEventListener("resize", function() {
+  let screenWidth = window.innerWidth;
+  let content = document.getElementById("content");
+  let loadmoreprojects = document.getElementById("loadmoreprojects");
+  let navigationMenu = document.getElementById("navigation");
+  
+  if (screenWidth > 1000) {
+    navigationMenu.style.width = "20%";
+    navigationMenu.style.display = "block";
+  }
+  if (screenWidth <= 1000) {
+    navigationMenu.style.width = "50%";
+    mobileMenuStatus = 1;
+  }
+  if (screenWidth > 1000 && loadmoreprojects.innerHTML === "SHOW MORE") {
+    content.style.height = "290em";
+  }
+  else if (screenWidth > 1000 && loadmoreprojects.innerHTML === "SHOW LESS") {
+    content.style.height = "379em";
+  }
+  else if (screenWidth <= 1000 && loadmoreprojects.innerHTML === "SHOW MORE") {
+    content.style.height = "480em";
+  }
+  else if (screenWidth <= 1000 && loadmoreprojects.innerHTML === "SHOW LESS") {
+    content.style.height = "665em";
+  }
+})
+
+
 
