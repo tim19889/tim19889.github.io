@@ -206,7 +206,12 @@ window.addEventListener("resize", function() {
   }
   if (screenWidth <= 1000) {
     navigationMenu.style.width = "50%";
-    mobileMenuStatus = 1;
+    if (mobileMenuStatus === 0) {
+      navigationMenu.style.display = "none";
+    }
+    else {
+      navigationMenu.style.display = "block";
+         }
   }
   if (screenWidth > 1000 && loadmoreprojects.innerHTML === "SHOW MORE") {
     content.style.height = "290em";
@@ -221,6 +226,4 @@ window.addEventListener("resize", function() {
     content.style.height = "665em";
   }
 })
-
-
 
