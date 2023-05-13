@@ -46,11 +46,14 @@ const startStopSlideShow = () => {
 }
 
 function showHideEducation(divId) { 
+  let screenWidth = window.innerWidth; 
   let eduTitleDiv = document.getElementById(`${divId}`);
  let eduContentDiv = document.getElementById(`educationcontent${divId[divId.length-1]}`);
   let pRightText = document.getElementById(`educationtitlerightp${divId[divId.length-1]}`);
   
+  if (screenWidth > 1000) {
   if (eduContentDiv.style.height === "0px" || eduContentDiv.style.height === "") {
+    
     switch (eduContentDiv.id[eduContentDiv.id.length-1]) {
       case "1" :
         eduContentDiv.style.height = "69px";
@@ -69,14 +72,44 @@ function showHideEducation(divId) {
     eduTitleDiv.style.color = "white";
     eduContentDiv.style.border = "1px solid lightgray";
     pRightText.innerHTML = "-";
-    
   }
-  else {
+    else {
     eduContentDiv.style.height = "0";
     eduContentDiv.style.border = "";
     pRightText.innerHTML = "+";
     eduTitleDiv.style.backgroundColor = "#F2F3F7";
     eduTitleDiv.style.color = "black";
+  }
+  }
+  else if (screenWidth <= 1000) {
+    if (eduContentDiv.style.height === "0px" || eduContentDiv.style.height === "") {
+    
+    switch (eduContentDiv.id[eduContentDiv.id.length-1]) {
+      case "1" :
+        eduContentDiv.style.height = "69px";
+        break;
+      case "2" :
+        eduContentDiv.style.height = "860px";
+        break;
+      case "3" :
+        eduContentDiv.style.height = "200px";
+        break;
+      case "4" :
+        eduContentDiv.style.height = "350px";
+        break;
+    }
+    eduTitleDiv.style.backgroundColor = "#2C98F0";
+    eduTitleDiv.style.color = "white";
+    eduContentDiv.style.border = "1px solid lightgray";
+    pRightText.innerHTML = "-";
+  }
+    else {
+    eduContentDiv.style.height = "0";
+    eduContentDiv.style.border = "";
+    pRightText.innerHTML = "+";
+    eduTitleDiv.style.backgroundColor = "#F2F3F7";
+    eduTitleDiv.style.color = "black";
+  }
   }
 }
 
@@ -212,18 +245,6 @@ window.addEventListener("resize", function() {
     else {
       navigationMenu.style.display = "block";
          }
-  }
-  if (screenWidth > 1000 && loadmoreprojects.innerHTML === "SHOW MORE") {
-    content.style.height = "290em";
-  }
-  else if (screenWidth > 1000 && loadmoreprojects.innerHTML === "SHOW LESS") {
-    content.style.height = "379em";
-  }
-  else if (screenWidth <= 1000 && loadmoreprojects.innerHTML === "SHOW MORE") {
-    content.style.height = "480em";
-  }
-  else if (screenWidth <= 1000 && loadmoreprojects.innerHTML === "SHOW LESS") {
-    content.style.height = "665em";
   }
 })
 
