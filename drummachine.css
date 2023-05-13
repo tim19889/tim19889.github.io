@@ -110,3 +110,8 @@ margin-top: 10%;
   margin-bottom: 2em;
   accent-color: yellow;
 }
+@media (max-width: 800px) {
+  #drum-machine {
+    width: 100%;
+  }
+}
