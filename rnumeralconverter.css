@@ -1,11 +1,8 @@
-body {
-  background-color: orange;
-}
 
 #mainDiv {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: orange;
   text-align: center;
   margin: auto;
@@ -78,8 +75,6 @@ p {
   #converterContainer {
     width: 100%;
   }
-}
-@media (max-width: 800px) {
   #mainDiv {
     background-color: blue;
   }
