@@ -89,7 +89,7 @@ function showHideEducation(divId) {
         eduContentDiv.style.height = "69px";
         break;
       case "2" :
-        eduContentDiv.style.height = "860px";
+        eduContentDiv.style.height = "950px";
         break;
       case "3" :
         eduContentDiv.style.height = "200px";
@@ -247,4 +247,3 @@ window.addEventListener("resize", function() {
          }
   }
 })
-
