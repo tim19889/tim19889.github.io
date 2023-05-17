@@ -65,7 +65,7 @@ function showHideEducation(divId) {
         eduContentDiv.style.height = "187px";
         break;
       case "4" :
-        eduContentDiv.style.height = "280px";
+        eduContentDiv.style.height = "300px";
         break;
     }
     eduTitleDiv.style.backgroundColor = "#2C98F0";
