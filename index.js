@@ -176,6 +176,7 @@ const project13 = document.getElementById('project13');
 const project14 = document.getElementById('project14');
 const project15 = document.getElementById('project15');
 const project16 = document.getElementById('project16');
+const project17 = document.getElementById('project17');
 
   project1.addEventListener('click', () => {
 window.open('https://tim19889.github.io/PasswordGeneratorHtml.html', '_blank');
@@ -225,6 +226,10 @@ window.open('https://www.nailsvv.com/', '_blank');
 project16.addEventListener('click', () => {
 window.open('https://github.com/tim19889/Powershell/blob/main/CreateUser-New.ps1', '_blank');
   });
+project17.addEventListener('click', () => {
+window.open('https://tim19889.github.io/christmascalendar', '_blank');
+  });
+
 
 //The height of the #content div needs to be changed based on screen size and whether or not the hidden projects are being shown. This event listener takes care of that.
 window.addEventListener("resize", function() {
