@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+  <title>Christmas Countdown Calendar</title>
+<link rel="stylesheet" href="calendarstyles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+<body>
+  <div id="hiddenDiv">
+    <h2 id="rotateScreenText">Please rotate your screen to see advent calendar.</h2>
+  </div>
+    <div id="container"> 
+      <img id="calendarImg" src="https://www.dropbox.com/s/g37lmg3si7ksrbh/wintercastle1.jpg?raw=1"></img>
+  
+  <div class="ballcontainer" id="ballcontainer1" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage1">
+      <div class="closeMessage" id="closeMessage1" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 1</h1>
+      <h2>Luke 2:7</h2>
+      <p>"And she gave birth to her firstborn son and wrapped him in swaddling cloths and laid him in a manger because there was no place for them in the inn."</p>
+<p>__________</p>
+<p>The nativity scene, as we commonly know it today with Mary, Joseph, and the baby Jesus in a stable, was popularized by St. Francis of Assisi in the 13th century. Prior to that, depictions of the nativity varied greatly.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball1">
+      <p class="balltext" id="balltext1">1</p>
+        </div>
+  </div>
+    
+  <div class="ballcontainer" id="ballcontainer2" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage2">
+      <div class="closeMessage" id="closeMessage2" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 2</h1>
+      <h2>Matthew 2:11</h2>
+      <p>"And going into the house, they saw the child with Mary his mother, and they fell down and worshiped him."</p>
+<p>__________</p>
+<p>The wise men, or magi, who visited Jesus were not present on the night of his birth. They arrived later, possibly up to two years later, when Jesus was already living in a house.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball2">
+      <p class="balltext" id="balltext2">2</p>
+        </div>
+  </div>
+  
+      <div class="ballcontainer" id="ballcontainer3" onclick="ballClick(this.id)">
+        <div class="hiddenMessage" id="hiddenMessage3">
+      <div class="closeMessage" id="closeMessage3" onclick="closeMessage()">X</div>
+          <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 3</h1>
+      <h2>Matthew 2:2</h2>
+      <p>"For we saw his star when it rose and have come to worship him."</p>
+<p>__________</p>
+<p>The Star of Bethlehem, which guided the wise men to Jesus, remains a mystery. Various theories suggest it could have been a supernova, a comet, or a unique conjunction of planets.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball3">
+      <p class="balltext" id="balltext3">3</p>
+        </div>
+  </div>
+    
+        <div class="ballcontainer" id="ballcontainer4" onclick="ballClick(this.id)">
+          <div class="hiddenMessage" id="hiddenMessage4">
+      <div class="closeMessage" id="closeMessage4" onclick="closeMessage()">X</div>
+            <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+      <h1>Day 4</h1>
+      <h2>Luke 2:8</h2>
+      <p>"And in the same region there were shepherds out in the field, keeping watch over their flock by night."</p>
+<p>__________</p>
+<p>The shepherds mentioned in the nativity story were likely not highly regarded in society, but they were chosen to be among the first to witness the birth of Jesus. This choice highlights Jesus' mission to bring salvation to all people, regardless of social status.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball4">
+       <p class="balltext" id="balltext4">4</p>
+        </div>
+  </div>
+          
+          <div class="ballcontainer" id="ballcontainer5" onclick="ballClick(this.id)">
+            <div class="hiddenMessage" id="hiddenMessage5">
+      <div class="closeMessage" id="closeMessage5" onclick="closeMessage()">X</div>
+              <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 5</h1>
+      <h2>Micah 5:2</h2>
+      <p>"But you, O Bethlehem Ephrathah, who are too little to be among the clans of Judah, from you shall come forth for me one who is to be ruler in Israel, whose coming forth is from of old, from ancient days."</p>
+<p>__________</p>
+<p>The city of Bethlehem, where Jesus was born, holds significant historical and biblical importance. It was the birthplace of King David and was prophesied as the birthplace of the Messiah.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball5">
+     <p class="balltext" id="balltext5">5</p>
+        </div>
+  </div>
+            
+            <div class="ballcontainer" id="ballcontainer6" onclick="ballClick(this.id)">
+              <div class="hiddenMessage" id="hiddenMessage6">
+      <div class="closeMessage" id="closeMessage6" onclick="closeMessage()">X</div>
+                <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 6</h1>
+      <h2>Matthew 1:22-23</h2>
+      <p>"All this took place to fulfill what the Lord had spoken by the prophet: 'Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel' (which means, God with us)."</p>
+<p>__________</p>
+<p>The birth of Jesus fulfilled numerous prophecies from the Old Testament, demonstrating the continuity and divine plan throughout history.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball6">
+      <p class="balltext" id="balltext6">6</p>
+        </div>
+  </div>
+              
+              <div class="ballcontainer" id="ballcontainer7" onclick="ballClick(this.id)">
+                <div class="hiddenMessage" id="hiddenMessage7">
+      <div class="closeMessage" id="closeMessage7" onclick="closeMessage()">X</div>
+                  <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 7</h1>
+      <h2>Matthew 2:1</h2>
+      <p>"Now after Jesus was born in Bethlehem of Judea in the days of Herod the king, behold, wise men from the east came to Jerusalem."</p>
+<p>__________</p>
+<p>Jesus' birth took place during the reign of Herod the Great, a Roman-appointed ruler known for his grand architectural projects but also his cruelty and paranoia.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball7">
+       <p class="balltext" id="balltext7">7</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer8" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage8">
+      <div class="closeMessage" id="closeMessage8" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 8</h1>
+      <h2>Luke 2:7</h2>
+      <p>"And she gave birth to her firstborn son and wrapped him in swaddling cloths and laid him in a manger because there was no place for them in the inn." </p>
+<p>__________</p>
+<p>The manger in which Jesus was laid is traditionally believed to be a feeding trough for animals. This humble setting symbolizes Jesus' identification with the poor and marginalized.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball8">
+      <p class="balltext" id="balltext8">8</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer9" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage9">
+      <div class="closeMessage" id="closeMessage9" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 9</h1>
+      <h2>Matthew 1:21</h2>
+      <p>"She will bear a son, and you shall call his name Jesus, for he will save his people from their sins."</p>
+<p>__________</p>
+<p>The name "Jesus" was not uncommon during that time. It derived from the Hebrew name "Yeshua," which means "salvation" or "the Lord is salvation." The name reflects the purpose of Jesus' mission on Earth.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball9">
+     <p class="balltext" id="balltext9">9</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer10" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage10">
+      <div class="closeMessage" id="closeMessage10" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 10</h1>
+      <h2>Luke 2:10</h2>
+      <p>"And the angel said to them, 'Fear not, for behold, I bring you good news of great joy that will be for all the people.'"</p>
+<p>__________</p>
+<p>Jesus' birth brought great joy and hope to the world. It was a pivotal moment in human history, marking the beginning of God's redemptive plan for humanity.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball10">
+      <p class="balltext" id="balltext10">10</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer11" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage11">
+      <div class="closeMessage" id="closeMessage11" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 11</h1>
+      <h2>Luke 1:35</h2>
+      <p>"And the angel answered her, 'The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore the child to be born will be called holy—the Son of God.'"</p>
+<p>__________</p>
+<p>The significance of the virgin birth lies in the fact that Jesus was conceived by the Holy Spirit, making him both fully human and fully divine. This miraculous event underscores Jesus' unique role as the Son of God.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball11">
+      <p class="balltext" id="balltext11">11</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer12" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage12">
+      <div class="closeMessage" id="closeMessage12" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 12</h1>
+      <h2>Luke 1:38</h2>
+      <p>"And Mary said, 'Behold, I am the servant of the Lord; let it be to me according to your word.'"</p>
+<p>__________</p>
+<p>Mary, the mother of Jesus, played a crucial role in God's plan of salvation. Her faith and obedience to God's will demonstrated her remarkable character.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball12">
+      <p class="balltext" id="balltext2">12</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer13" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage13">
+      <div class="closeMessage" id="closeMessage13" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 13</h1>
+      <h2>Matthew 2:9</h2>
+      <p>"And behold, the star that they had seen when it rose went before them until it came to rest over the place where the child was."</p>
+<p>__________</p>
+<p>The birth of Jesus brought together people from diverse backgrounds and nations. The wise men who visited Jesus were from the East, possibly representing the inclusion of Gentiles in God's redemptive plan.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball13">
+      <p class="balltext" id="balltext13">13</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer14" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage14">
+      <div class="closeMessage" id="closeMessage14" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 14</h1>
+      <h2>Isaiah 9:6</h2>
+      <p>"For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."</p>
+<p>__________</p>
+<p>Jesus' birth was a fulfillment of God's promise to send a Messiah, a deliverer who would reconcile humanity with God and bring salvation.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball14">
+      <p class="balltext" id="balltext14">14</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer15" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage15">
+      <div class="closeMessage" id="closeMessage15" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 15</h1>
+      <h2>Matthew 2:11</h2>
+      <p>"And going into the house, they saw the child with Mary his mother, and they fell down and worshiped him. Then, opening their treasures, they offered him gifts, gold and frankincense and myrrh."</p>
+<p>__________</p>
+<p>The visit of the wise men bearing gifts of gold, frankincense, and myrrh holds symbolic significance. Gold symbolizes Jesus' kingship, frankincense represents his deity, and myrrh foreshadows his sacrificial death.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball15">
+      <p class="balltext" id="balltext15">15</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer16" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage16">
+      <div class="closeMessage" id="closeMessage16" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 16</h1>
+      <h2>Philippians 2:5-7</h2>
+      <p>"Have this mind among yourselves, which is yours in Christ Jesus, who, though He was in the form of God, did not count equality with God a thing to be grasped, but emptied himself, by taking the form of a servant, being born in the likeness of men." </p>
+<p>__________</p>
+<p>The nativity story teaches us the value of humility and simplicity. Despite being the King of Kings, Jesus entered the world in a humble manner, emphasizing the importance of genuine humility.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball16">
+      <p class="balltext" id="balltext16">16</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer17" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage17">
+      <div class="closeMessage" id="closeMessage17" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 17</h1>
+      <h2>John 14:6</h2>
+      <p>"Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me.'"</p>
+<p>__________</p>
+<p>The birth of Jesus initiated a new era in which people could have a personal relationship with God. Through Jesus, humanity gained access to the Father and the opportunity for eternal life.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball17">
+      <p class="balltext" id="balltext7">17</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer18" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage18">
+      <div class="closeMessage" id="closeMessage18" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 18</h1>
+      <h2>Luke 2:9</h2>
+      <p>"And an angel of the Lord appeared to them, and the glory of the Lord shone around them, and they were filled with great fear."</p>
+<p>__________</p>
+<p>The presence of angels throughout the nativity story emphasizes the spiritual significance of Jesus' birth. Angels served as messengers, heralds, and protectors, revealing the supernatural nature of Jesus' mission.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball18">
+    <p class="balltext" id="balltext18">18</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer19" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage19">
+      <div class="closeMessage" id="closeMessage19" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 19</h1>
+      <h2>Luke 1:45</h2>
+      <p>"And blessed is she who believed that there would be a fulfillment of what was spoken to her from the Lord."</p>
+<p>__________</p>
+<p>The nativity story is a reminder of the importance of faith. Mary, Joseph, the shepherds, and the wise men all exhibited unwavering faith in God's promises and were rewarded with the privilege of witnessing and participating in Jesus' birth.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball19">
+      <p class="balltext" id="balltext19">19</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer20" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage20">
+      <div class="closeMessage" id="closeMessage20" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 20</h1>
+      <h2>Luke Philippians 2:8</h2>
+      <p>"And being found in human form, he humbled himself by becoming obedient to the point of death, even death on a cross."</p>
+<p>__________</p>
+<p>Jesus' birth in a stable carries symbolism beyond its historical context. It foreshadows his future sacrificial death on the cross, where he would offer himself as a humble and perfect sacrifice for the sins of humanity.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball20">
+       <p class="balltext" id="balltext20">20</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer21" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage21">
+      <div class="closeMessage" id="closeMessage21" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 21</h1>
+      <h2>Matthew 1:23</h2>
+      <p>"Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel (which means, God with us)." </p>
+<p>__________</p>
+<p>The celebration of Christmas, commemorating the birth of Jesus, has been observed by Christians for centuries. It serves as a time of reflection, worship, and gratitude for the gift of God's Son.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball21">
+      <p class="balltext" id="balltext21">21</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer22" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage22">
+      <div class="closeMessage" id="closeMessage22"onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 22</h1>
+      <h2>Luke 2:4</h2>
+      <p>"And Joseph also went up from Galilee, from the town of Nazareth, to Judea, to the city of David, which is called Bethlehem, because he was of the house and lineage of David."</p>
+<p>__________</p>
+<p>The nativity story teaches us the importance of obedience to God's call. Mary and Joseph both responded faithfully to God's instructions, even when they faced uncertainty and challenges.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball22">
+      <p class="balltext" id="balltext22">22</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer23" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage23">
+      <div class="closeMessage" id="closeMessage23" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 23</h1>
+      <h2>Isaiah 9:2</h2>
+      <p>"The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shone."</p>
+<p>__________</p>
+<p>The birth of Jesus brings hope to the broken and weary. It reminds us that no matter how challenging our circumstances may be, God is present and offers redemption, restoration, and new beginnings.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball23">
+    <p class="balltext" id="balltext23">23</p>
+        </div>
+  </div>
+  
+  <div class="ballcontainer" id="ballcontainer24" onclick="ballClick(this.id)">
+    <div class="hiddenMessage" id="hiddenMessage24">
+      <div class="closeMessage" id="closeMessage24" onclick="closeMessage()">X</div>
+      <div class="christmasClipart">
+        <img class="clipartImg" src=""></img>
+      </div>
+    <h1>Day 23</h1>
+      <h2>Matthew 2:11</h2>
+      <p>"And going into the house, they saw the child with Mary his mother, and they fell down and worshiped him."</p>
+<p>__________</p>
+<p>The nativity story invites us to respond to Jesus' birth with worship, just as the shepherds and wise men did. It calls us to honor and adore the Son of God, recognizing His divine nature and the salvation He brings.</p>
+    </div>
+    <div class="string"></div>
+    <div class="ballclip"></div>
+  <div class="ball" id="ball24">
+      <p class="balltext" id="balltext24">24</p>
+        </div>
+  </div>
+      </div>
+<script src="christmascalendar.js"></script>
+</body>
+</html>

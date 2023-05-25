@@ -1,0 +1,237 @@
+body {
+  height: 100%;
+      margin: 0;
+    }
+    
+#hiddenDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  color: blue;
+  display: none;
+}
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+    }
+
+#calendarImg {
+  left: -0.5%;
+  top: -1.8%;
+  width: 100%;
+}
+.ballcontainer {
+  position: absolute;
+  height: 22%; 
+  width: 5%;  
+  background-color: transparent;
+  transform: translateX(-50%);
+  transition: width 0.5s ease;
+}
+.ballcontainer:hover {
+  transform: translateX(-50%);
+  width: 5.5%;
+}
+
+.balltext {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  font-size: 3vw;;
+}
+.balltext:hover {
+  cursor: pointer;
+}
+.string {
+  position: relative;
+  width: 2px;
+  background-color: white;
+  height: 330%;
+  margin: auto;
+  top: -298%;
+}
+.ball {
+      position: relative;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+      width: 100%;
+      height: 35%;
+      top: -300%;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+.ball:hover {
+  cursor: pointer;
+}
+.ballclip {
+  position: relative;
+  top: -296%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 5%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #E3DC9D;
+}
+    
+.hiddenMessage {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+  top: 125.5%;
+  left: 0%;
+  width: 500%;
+  height: 80%;
+  background-color: white;
+  border-left: 10px solid #0a370c;
+  border-right: 10px solid #0a370c;
+  border-top: 10px solid #6e0b0e;
+  border-bottom: 10px solid #6e0b0e;
+  overflow-y: scroll;
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+.hiddenMessage p:first-of-type {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.hiddenMessage p:last-child {
+margin-left: 2%;
+margin-right: 2%;
+}
+.hiddenMessage h1 {
+  margin-top: 1%;
+}
+
+.closeMessage {
+  position: fixed;
+  background-color: white;
+  left: 451%;
+  width: 30%;
+  height: 10%;
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeMessage:hover {
+  cursor: pointer;
+}
+.christmasClipart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 40%;
+  margin-bottom: 0;
+  margin: auto;
+}
+.clipartImg {
+  max-width: 100%;
+  max-height: 100%;
+}
+#ballcontainer1 {
+  left: 3%;
+}
+#ballcontainer2 {
+  left: 5%;
+}
+#ballcontainer3 {
+  left: 7%;
+}
+#ballcontainer4 {
+  left: 12%;
+}
+#ballcontainer5 {
+  left: 15.5%;
+}
+#ballcontainer6 {
+  left: 19%;
+}
+#ballcontainer7 {
+  left: 24.5%;
+}
+#ballcontainer8 {
+  left: 27.5%;
+}
+#ballcontainer9 {
+  left: 30%;
+}
+#ballcontainer10 {
+  left: 34%;
+}
+#ballcontainer11 {
+  left: 37.8%;
+}
+#ballcontainer12 {
+  left: 40%;
+}
+#ballcontainer13 {
+  left: 45%;
+}
+#ballcontainer14 {
+  left: 49%;
+}
+#ballcontainer15 {
+  left: 52.5%;
+}
+#ballcontainer16 {
+  left: 55.5%;
+}
+#ballcontainer17 {
+  left: 59%;
+}
+#ballcontainer18 {
+  left: 65%;
+}
+#ballcontainer19 {
+  left: 70%;
+}
+#ballcontainer20 {
+  left: 73.7%;
+}
+#ballcontainer21 {
+  left: 79.5%;
+}
+#ballcontainer22 {
+  left: 85%;
+}
+#ballcontainer23 {
+  left: 91%;
+}
+#ballcontainer24 {
+  left: 97%;
+}
+
+
+@media (max-width: 480px) {
+  #hiddenDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  #rotateScreenText {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+  }
+  #container {
+    display: none;
+  }
+}
+
+
