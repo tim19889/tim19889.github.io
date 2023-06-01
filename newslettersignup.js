@@ -14,7 +14,10 @@ let subscribeBtn = (event) => {
   else {
     formContainer.style.display = "none";
     thanksMessage.style.display = "block";
-    successMessage.innerHTML = `A confirmation email has been sent to <b>${emailAddress.value}</b>. Please open it and click the button inside to confirm your subscription.`
+    successMessage.innerHTML = `A confirmation email has been sent to <b>${emailAddress.value}</b>. Please open it and click the button inside to confirm your subscription.`;
+    emailError.style.visibility = "hidden";
+    emailAddress.style.color = "black";
+    emailAddress.style.backgroundColor = "white";
     event.preventDefault();
   }
 }
