@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Newsletter Sign-up Form</title>
+
+</head>
+<body>
+<div id="container">
+  <div id="thanksMessage">
+    <img id="successCheck" src="https://www.dropbox.com/s/4yzu1xjpd9t0835/icon-success.svg?raw=1"></img>
+  <h1 id="thanksh1">Thanks for subscribing!</h1>
+  <p id="successMessage" class="p-text"></p>
+  <div id="dismissMessage" onclick="dismissBtn()">Dismiss message</div>
+  </div>
+  <div id="formContainer">
+    <div id="form-left">
+      <h1 id="form-left-header">Stay updated!</h1>
+      <p class="p-text">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="checkpoints">
+      <img src="https://www.dropbox.com/s/scvdkmx4r802zrk/icon-list.svg?raw=1"></img>
+      <p class="p-text">Product discovery and building what matters</p>
+    </div>
+    <div class="checkpoints">
+      <img src="https://www.dropbox.com/s/scvdkmx4r802zrk/icon-list.svg?raw=1"></img>
+      <p class="p-text">Measuring to ensure updates are a success</p>
+    </div>
+  <div class="checkpoints">
+      <img src="https://www.dropbox.com/s/scvdkmx4r802zrk/icon-list.svg?raw=1"></img>
+      <p class="p-text">And much more!</p>
+    </div>
+  <form id="email-form" novalidate>
+    <label for="email" class="email" id=email-label>Email Address  <span id="email-error">Valid email required</span></label>
+   
+        <input type="email" id="email" class="email" name="email" placeholder="email@company.com" required>
+        <br>
+        <input type="submit" id="subscribe-btn" class="email" value="Subscribe to monthly newsletter" onclick="subscribeBtn(event)">
+  </form>
+    </div>
+    <div id="form-right">
+      <img id="form-right-img" src="https://www.dropbox.com/s/64drs0omhzjcgq6/illustration-sign-up-desktop.svg?raw=1"></img>
+    </div>
+  </div>
+  </div>
+  
+</body>
+</html>
