@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,700&display=swap" rel="stylesheet">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+ <div id="container">
+   <div id="ageAppContainer">
+     <div id="ageInputs">
+       <div id="dayInputDiv" class="inputContainers">
+         <p class="inputLabels">Day</p>
+         <input type="number" id="dayInput" class="inputs" placeholder="DD"></input>
+       <p id="dayError" class="error">Must be a valid date</p>
+       </div>
+       <div id="monthInputDiv" class="inputContainers">
+         <p class="inputLabels">Month</p>
+         <input type="number" id="monthInput" class="inputs" placeholder="MM"></input>
+     <p id="monthError" class="error">Must be a valid month</p>
+       </div>
+       <div id="yearInputDiv" class="inputContainers">
+         <p class="inputLabels">Year</p>
+         <input type="number" id="yearInput" class="inputs" placeholder="YYYY"></input>
+   <p id="yearError" class="error">Must be in the past</p>
+       </div>
+     </div>
+  <div id="line">
+    <div id="circleBtn" onclick="calculateAge()">
+      <img id="arrow" src="https://www.dropbox.com/s/8a6vogctcx7acxi/icon-arrow.svg?raw=1"></img>
+    </div>
+  </div>
+<p class="error" id="emptyFieldError">Please fill out all fields</p>
+<div id="resultsContainer">
+  <h1 class="results"><span class="dashes" id="yearsOld">- -</span> years</h1>
+  <h1 class="results"><span class="dashes" id="monthsOld">- -</span> months</h1>
+  <h1 class="results"><span class="dashes" id="daysOld">- -</span> days</h1>
+</div>
+   </div>
+   
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Tim Porsche</a>.
+  </div>
+</body>
+</html>
