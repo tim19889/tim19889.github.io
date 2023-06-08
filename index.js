@@ -178,6 +178,7 @@ const project15 = document.getElementById('project15');
 const project16 = document.getElementById('project16');
 const project17 = document.getElementById('project17');
 const project18 = document.getElementById('project18');
+const project19 = document.getElementById('project19');
 
   project1.addEventListener('click', () => {
 window.open('https://tim19889.github.io/PasswordGeneratorHtml.html', '_blank');
@@ -232,6 +233,9 @@ window.open('https://tim19889.github.io/christmascalendar', '_blank');
   });
 project18.addEventListener('click', () => {
 window.open('https://tim19889.github.io/newslettersignup.html', '_blank');
+  });
+project19.addEventListener('click', () => {
+window.open('https://tim19889.github.io/agecalculator.html', '_blank');
   });
 
 
