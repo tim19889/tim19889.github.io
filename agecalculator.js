@@ -36,7 +36,7 @@ function calculateAge() {
   let todaysDate = JSON.stringify(new Date());
   let currentYear = parseInt(todaysDate.substring(1,5));
   let currentMonth = parseInt(todaysDate.substring(7,8));
-  let currentDay = parseInt(todaysDate.substring(10,11));
+  let currentDay = parseInt(todaysDate.substring(9,11));
 
   let dayError = document.getElementById("dayError");
   let monthError = document.getElementById("monthError");
